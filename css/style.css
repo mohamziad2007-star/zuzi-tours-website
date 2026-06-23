@@ -459,15 +459,6 @@ section {
   margin-top: 38px;
 }
 
-.hero-stats {
-  position: absolute;
-  z-index: 3;
-  top: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 14px;
-}
 
 .stat-pill {
   display: inline-flex;
@@ -1562,7 +1553,6 @@ section {
   gap: 22px;
 }
 
-/* Floating WhatsApp button */
 .wa-fab {
   position: fixed;
   right: 22px;
@@ -1599,7 +1589,6 @@ section {
   100% { transform: scale(1.7); opacity: 0; }
 }
 
-/* Back to top */
 .to-top {
   position: fixed;
   right: 24px;
@@ -1628,9 +1617,6 @@ section {
   transform: translateY(0);
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
 @media (max-width: 1024px) {
   .tour-body {
     grid-template-columns: 1fr;

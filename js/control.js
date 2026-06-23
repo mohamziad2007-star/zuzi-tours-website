@@ -140,9 +140,6 @@
     });
   }
 
-  /* =====================================================
-     BUILD A TOUR CARD (used on home + related)
-     ===================================================== */
   function tourCardHTML(t) {
     return `
       <a class="tour-card" href="tour.html?id=${encodeURIComponent(t.id)}">
@@ -190,7 +187,7 @@
     document.title = `${tour.name} — Zuzi Tours`;
 
     const bookingMsg =
-      `Hello Zuzi Tours! 👋 I'd like to book the *${tour.name}* tour ` +
+      `Hello Zuzi Tours! I'd like to book the *${tour.name}* tour ` +
       `(${tour.duration}). Listed price: ${money(tour.price)} ${tour.priceUnit || "per person"}. ` +
       `Could you share availability & next departure dates? Thank you!`;
 
