@@ -1,3 +1,13 @@
+/* ============================================================
+   ZUZI TOURS — Tour catalogue (data layer)
+   ------------------------------------------------------------
+   Add a new tour = add one object to this array and it will
+   automatically appear on the home grid and get its own detail
+   page at  tour.html?id=<id>   — no extra HTML needed.
+
+   NOTE: Prices/durations below are editable placeholders in EGP.
+   ============================================================ */
+
 window.ZUZI_TOURS = [
   {
     id: "luxor",
@@ -10,6 +20,8 @@ window.ZUZI_TOURS = [
     reviews: 1284,
     duration: "Full day · ~12 hrs",
     durationShort: "12 hours",
+    price: 1800,
+    priceUnit: "per person",
     bestFor: "History & archaeology",
     cardDesc:
       "Walk among the colossal columns of Karnak and descend into the royal tombs of the Valley of the Kings on the East and West Banks.",
@@ -22,6 +34,12 @@ window.ZUZI_TOURS = [
       { icon: "ri-flower-line", title: "Temple of Hatshepsut" },
       { icon: "ri-statue-line", title: "Colossi of Memnon" },
       { icon: "ri-ship-line", title: "Nile felucca sail" },
+    ],
+    gallery: [
+      { src: "assets/images/gallery/luxor/1.webp", caption: "Temple of Hatshepsut on the West Bank" },
+      { src: "assets/images/gallery/luxor/2.jpg", caption: "Obelisk of Hatshepsut at Karnak" },
+      { src: "assets/images/gallery/luxor/3.jpg", caption: "The great hypostyle hall of Karnak" },
+      { src: "assets/images/gallery/luxor/4.jpg", caption: "Approaching the Valley of the Kings" },
     ],
     itinerary: [
       { time: "05:30", title: "Pick-up & departure", text: "Air-conditioned transfer from your hotel, with breakfast on the go." },
@@ -46,7 +64,8 @@ window.ZUZI_TOURS = [
     reviews: 642,
     duration: "Full day · ~10 hrs",
     durationShort: "10 hours",
-  
+    price: 1500,
+    priceUnit: "per person",
     bestFor: "Culture & relaxation",
     cardDesc:
       "Sail to the temple island of Philae, stand beneath the mighty High Dam and glide over the Nile on a traditional felucca.",
@@ -59,6 +78,12 @@ window.ZUZI_TOURS = [
       { icon: "ri-leaf-line", title: "Botanical Garden island" },
       { icon: "ri-ship-line", title: "Traditional felucca sail" },
       { icon: "ri-store-2-line", title: "Nubian village visit" },
+    ],
+    gallery: [
+      { src: "assets/images/gallery/aswan/1.webp", caption: "Philae Temple on its island" },
+      { src: "assets/images/gallery/aswan/2.jpg", caption: "Boarding a traditional felucca" },
+      { src: "assets/images/gallery/aswan/3.jpg", caption: "A peaceful felucca sail on the Nile" },
+      { src: "assets/images/gallery/aswan/4.jpg", caption: "Boats drifting on the Nile at Aswan" },
     ],
     itinerary: [
       { time: "07:00", title: "Pick-up", text: "Meet your guide and head to the first site." },
@@ -83,7 +108,8 @@ window.ZUZI_TOURS = [
     reviews: 511,
     duration: "Full day · ~9 hrs",
     durationShort: "9 hours",
-  
+    price: 2200,
+    priceUnit: "per person",
     bestFor: "Bucket-list monuments",
     cardDesc:
       "Stand before the four colossal statues of Ramses II and the temple of Queen Nefertari, saved stone-by-stone from the rising Nile.",
@@ -96,6 +122,12 @@ window.ZUZI_TOURS = [
       { icon: "ri-water-flash-line", title: "Lake Nasser views" },
       { icon: "ri-shield-star-line", title: "UNESCO rescue story" },
       { icon: "ri-ancient-pavilion-line", title: "Battle of Kadesh reliefs" },
+    ],
+    gallery: [
+      { src: "assets/images/gallery/abu-simbel/1.jpg", caption: "Aerial view of the temple complex" },
+      { src: "assets/images/gallery/abu-simbel/2.webp", caption: "The colossi at sunset over Lake Nasser" },
+      { src: "assets/images/gallery/abu-simbel/3.jpg", caption: "Cruising toward Abu Simbel on Lake Nasser" },
+      { src: "assets/images/gallery/abu-simbel/4.webp", caption: "Detail of the Temple of Nefertari" },
     ],
     itinerary: [
       { time: "04:30", title: "Early departure", text: "Road transfer across the desert (convoy safety) — or optional flight." },
@@ -120,7 +152,8 @@ window.ZUZI_TOURS = [
     reviews: 2317,
     duration: "Half day · ~5 hrs",
     durationShort: "5 hours",
-  
+    price: 1200,
+    priceUnit: "per person",
     bestFor: "First-time visitors",
     cardDesc:
       "Meet the Great Pyramid of Khufu, ride between the pyramids and unlock the mystery of the Great Sphinx on the Giza Plateau.",
@@ -133,6 +166,12 @@ window.ZUZI_TOURS = [
       { icon: "ri-museum-line", title: "Valley Temple" },
       { icon: "ri-horse-line", title: "Optional camel ride" },
       { icon: "ri-building-4-line", title: "Grand Egyptian Museum add-on" },
+    ],
+    gallery: [
+      { src: "assets/images/gallery/giza/1.jpg", caption: "Camel ride across the Giza Plateau" },
+      { src: "assets/images/gallery/giza/2.jpg", caption: "Riding between the pyramids" },
+      { src: "assets/images/gallery/giza/3.jpg", caption: "Standing beside the Great Pyramid" },
+      { src: "assets/images/gallery/giza/4.jpg", caption: "The Great Sphinx and the pyramids" },
     ],
     itinerary: [
       { time: "08:00", title: "Pick-up", text: "Transfer from your Cairo/Giza hotel." },
@@ -156,7 +195,8 @@ window.ZUZI_TOURS = [
     reviews: 876,
     duration: "Full day · ~8 hrs",
     durationShort: "8 hours",
-  
+    price: 1000,
+    priceUnit: "per person",
     bestFor: "Snorkelling & diving",
     cardDesc:
       "Swim with spinner dolphins at the famous Dolphin House, snorkel virgin reefs and end the day with a Bedouin dinner under the stars.",
@@ -169,6 +209,12 @@ window.ZUZI_TOURS = [
       { icon: "ri-restaurant-line", title: "Bedouin dinner" },
       { icon: "ri-roadster-line", title: "Quad-bike desert safari" },
       { icon: "ri-star-smile-line", title: "Stargazing in the dunes" },
+    ],
+    gallery: [
+      { src: "assets/images/gallery/marsa-alam/1.webp", caption: "Spinner dolphins at Sataya Reef" },
+      { src: "assets/images/gallery/marsa-alam/2.webp", caption: "Swimming alongside wild dolphins" },
+      { src: "assets/images/gallery/marsa-alam/3.webp", caption: "Snorkel boat over the coral gardens" },
+      { src: "assets/images/gallery/marsa-alam/4.webp", caption: "An overnight trip under the stars" },
     ],
     itinerary: [
       { time: "08:00", title: "Boat departure", text: "Board at the marina and cruise toward Sataya Reef." },
@@ -193,7 +239,8 @@ window.ZUZI_TOURS = [
     reviews: 1503,
     duration: "Full day · ~7 hrs",
     durationShort: "7 hours",
-  
+    price: 900,
+    priceUnit: "per person",
     bestFor: "Families & beach fun",
     cardDesc:
       "Cruise to the protected island of Giftun, snorkel crystal lagoons and explore the colourful reefs of the Red Sea Riviera.",
@@ -206,6 +253,12 @@ window.ZUZI_TOURS = [
       { icon: "ri-restaurant-line", title: "Onboard lunch" },
       { icon: "ri-water-flash-line", title: "Semi-submarine add-on" },
       { icon: "ri-anchor-line", title: "Hurghada Marina" },
+    ],
+    gallery: [
+      { src: "assets/images/gallery/hurghada/1.jpg", caption: "Orange Bay on Giftun Island" },
+      { src: "assets/images/gallery/hurghada/2.jpg", caption: "Giftun Island National Park" },
+      { src: "assets/images/gallery/hurghada/3.jpg", caption: "Snorkelling at Orange Bay" },
+      { src: "assets/images/gallery/hurghada/4.jpg", caption: "Reef snorkelling on the trip" },
     ],
     itinerary: [
       { time: "08:30", title: "Boarding", text: "Pick-up and departure from the Hurghada marina." },

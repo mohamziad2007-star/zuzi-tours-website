@@ -1,4 +1,14 @@
+/* ============================================================
+   ZUZI TOURS — Stylesheet
+   Built on the foundation design system: brand teal palette,
+   Playfair Display / Cormorant Garamond / DM Sans typography,
+   soft hero overlay and elevated cards with hover lift.
+   Bugs fixed: removed broken `@import "tailwindcss"`, corrected
+   the fixed-header centering/transform conflict, themed every
+   new component for light + dark mode.
+   ============================================================ */
 
+/* ---------- Design tokens (light) ---------- */
 :root {
   --color-brand-primary: #1a3c40;
   --color-brand-secondary: #2a5f65;
@@ -56,6 +66,7 @@
   --shadow-soft: 0 10px 36px rgba(13, 31, 34, 0.12);
 }
 
+/* ---------- Design tokens (dark) ---------- */
 [data-theme="dark"] {
   --color-brand-primary: #4ecdc4;
   --color-brand-secondary: #38b2ac;
@@ -91,6 +102,7 @@
   --color-border-medium: #2a5255;
 }
 
+/* ---------- Reset ---------- */
 *,
 *::before,
 *::after {
@@ -133,6 +145,7 @@ a {
   margin-inline: auto;
 }
 
+/* ---------- Header / Nav ---------- */
 header {
   position: fixed;
   top: 16px;
@@ -276,6 +289,7 @@ header {
   border-radius: 999px;
 }
 
+/* Mobile slide-down menu */
 .mobile-menu {
   position: fixed;
   top: 86px;
@@ -321,6 +335,7 @@ header {
   color: var(--color-brand-accent);
 }
 
+/* ---------- Sections ---------- */
 main {
   position: relative;
 }
@@ -363,6 +378,7 @@ section {
   font-size: 1.02rem;
 }
 
+/* ---------- Hero ---------- */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -471,6 +487,7 @@ section {
   color: var(--color-brand-accent);
 }
 
+/* Floating image popups (decorative) */
 @keyframes float-img {
   0% { transform: translateY(0) rotate(-7deg); }
   50% { transform: translateY(-12px) rotate(-5deg); }
@@ -519,6 +536,7 @@ section {
   50% { transform: translateY(6px); }
 }
 
+/* ---------- Buttons ---------- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -581,6 +599,7 @@ section {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* ---------- About ---------- */
 #about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -673,6 +692,7 @@ section {
   opacity: 0.85;
 }
 
+/* ---------- Categories / tour cards ---------- */
 #tours {
   background: var(--color-bg-base);
 }
@@ -815,6 +835,7 @@ section {
   transition: transform 0.3s ease;
 }
 
+/* ---------- CTA strip ---------- */
 .cta-band {
   background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-secondary));
   color: #fff;
@@ -838,6 +859,9 @@ section {
   opacity: 0.92;
 }
 
+/* ============================================================
+   TOUR DETAIL PAGE
+   ============================================================ */
 .tour-hero {
   position: relative;
   min-height: 78vh;
@@ -935,6 +959,7 @@ section {
   color: var(--color-brand-accent);
 }
 
+/* Detail body layout */
 .tour-body {
   max-width: var(--maxw);
   margin: 0 auto;
@@ -970,6 +995,7 @@ section {
   line-height: 1.8;
 }
 
+/* Highlights grid */
 .highlights-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -998,6 +1024,7 @@ section {
   color: var(--color-text-primary);
 }
 
+/* Itinerary timeline */
 .timeline {
   position: relative;
   margin-left: 6px;
@@ -1046,6 +1073,7 @@ section {
   color: var(--color-text-secondary);
 }
 
+/* Included / excluded */
 .incl-excl {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1098,6 +1126,7 @@ section {
 .incl li i { color: var(--color-success); }
 .excl li i { color: var(--color-error); }
 
+/* Booking sidebar */
 .tour-aside {
   position: sticky;
   top: 100px;
@@ -1194,11 +1223,219 @@ section {
   color: var(--color-success);
 }
 
+/* ---------- Past Trips Gallery ---------- */
+.mini-sub {
+  font-size: 0.98rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 22px;
+  max-width: 58ch;
+}
+
+.gallery-toggle {
+  margin-top: 4px;
+}
+
+.gallery-toggle .gt-icon {
+  transition: transform 0.35s ease;
+}
+
+.gallery-toggle.open .gt-icon {
+  transform: rotate(180deg);
+}
+
+/* Animated reveal using grid-template-rows (smooth auto-height) */
+.gallery-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-collapse-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.gallery-collapse.open {
+  grid-template-rows: 1fr;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 26px;
+  padding-bottom: 6px;
+}
+
+.gallery-item {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: zoom-in;
+  border: 1px solid var(--color-card-border);
+  box-shadow: var(--color-card-shadow);
+  transition: transform 0.32s ease, box-shadow 0.32s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--color-card-shadow-hover);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px 14px 12px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.4;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.1) 70%, transparent);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.gallery-item figcaption i {
+  font-size: 1rem;
+  color: var(--color-brand-accent);
+}
+
+/* ---------- Lightbox ---------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(8, 12, 14, 0.92);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox .lb-figure {
+  margin: 0;
+  max-width: min(90vw, 940px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.lightbox .lb-img {
+  max-width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55);
+  transform: scale(0.96);
+  transition: transform 0.3s ease;
+}
+
+.lightbox.open .lb-img {
+  transform: scale(1);
+}
+
+.lightbox .lb-caption {
+  color: #fff;
+  font-size: 0.92rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.lightbox .lb-count {
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+}
+
+.lightbox .lb-close,
+.lightbox .lb-nav {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.lightbox .lb-close:hover,
+.lightbox .lb-nav:hover {
+  background: var(--color-brand-accent);
+}
+
+.lightbox .lb-close {
+  top: 20px;
+  right: 24px;
+}
+
+.lightbox .lb-close:hover {
+  transform: scale(1.08);
+}
+
+.lightbox .lb-prev {
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox .lb-next {
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox .lb-prev:hover {
+  transform: translateY(-50%) scale(1.08);
+}
+
+.lightbox .lb-next:hover {
+  transform: translateY(-50%) scale(1.08);
+}
+
 /* Related tours */
 .related {
   background: var(--color-bg-surface);
 }
 
+/* ============================================================
+   FOOTER
+   ============================================================ */
 .site-footer {
   background: var(--color-brand-primary);
   color: rgba(255, 255, 255, 0.8);
@@ -1325,6 +1562,7 @@ section {
   gap: 22px;
 }
 
+/* Floating WhatsApp button */
 .wa-fab {
   position: fixed;
   right: 22px;
@@ -1361,6 +1599,7 @@ section {
   100% { transform: scale(1.7); opacity: 0; }
 }
 
+/* Back to top */
 .to-top {
   position: fixed;
   right: 24px;
@@ -1389,6 +1628,9 @@ section {
   transform: translateY(0);
 }
 
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
 @media (max-width: 1024px) {
   .tour-body {
     grid-template-columns: 1fr;
@@ -1514,6 +1756,7 @@ section {
   }
 }
 
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
