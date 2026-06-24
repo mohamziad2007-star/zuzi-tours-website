@@ -1,25 +1,13 @@
-/* ============================================================
-   ZUZI TOURS — Global configuration
-   ------------------------------------------------------------
-   This is the SINGLE source of truth for contact details and
-   booking. Update the WhatsApp number / details here once and
-   every page + button across the site is updated automatically.
-   ============================================================ */
-
 window.ZUZI_CONFIG = {
   brand: "Zuzi Tours",
   tagline: "Experience Egypt, not just a destination.",
 
-  /* ---- WhatsApp / Booking -----------------------------------
-     International format, DIGITS ONLY (no "+", spaces or dashes).
-     Replace the placeholder below with the real number.       */
-  whatsapp: "201000000000",
-  whatsappDisplay: "+20 100 000 0000",
+  whatsapp: "201022747727",
+  whatsappDisplay: "+20 10 22747727",
 
-  phone: "+20 100 000 0000",
+  phone: "+20 10 22747727",
   email: "hello@zuzitours.com",
 
-  /* Location shown in the footer */
   location: "Hurghada & Marsa Alam, Red Sea — Egypt",
   areasServed: [
     "Luxor",
