@@ -20,8 +20,8 @@ window.ZUZI_CONFIG = {
   hours: "Every day · 8:00 AM – 10:00 PM (EET)",
 
   social: {
-    instagram: "https://instagram.com/",
-    facebook: "https://facebook.com/",
+    instagram: "https://www.instagram.com/zuzi.tours?igsh=Y3ZkbXhzMGU4aDlz&utm_source=qr",
+    facebook: "https://www.facebook.com/share/1BD9FhaKqy/?mibextid=wwXIfr",
   },
 
   currency: "EGP",
