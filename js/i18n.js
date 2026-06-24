@@ -149,7 +149,7 @@ window.ZUZI_I18N = {
         tagline: "Největší muzeum pod širým nebem na světě", bestFor: "Historie a archeologie",
         duration: "Celý den · cca 12 hod", durationShort: "12 hodin",
         cardDesc: "Procházejte se mezi kolosálními sloupy Karnaku a sestupte do královských hrobek Údolí králů na východním i západním břehu.",
-        longDesc: "Our adventure begins in Marsa Alam or Hurghada with a trip to Luxor, including a one-night stay in one of its hotels. If you'd like to experience a two-day hot air balloon ride, on the first day you'll visit Karnak Temple, the Temple of Hatshepsut, and the Valley of the Kings, cross the Nile by small boat, and have lunch. On the second day, at dawn, you'll enjoy a hot air balloon ride, which concludes around 8:00 AM, after which you'll return to the hotel. The trip includes a one-day tour guide, drinks, and transportation. Book your trip now!",
+        longDesc: "Naše dobrodružství začíná v Marsa Alam nebo Hurgádě výletem do Luxoru, včetně jedné noci v jednom z místních hotelů. Pokud chcete zažít jízdu horkovzdušným balónem, první den navštívíte chrám Karnak, chrám Hatšepsut a Údolí králů, přejedete Nil malou lodí a budete mít oběd. Druhý den při úsvitu si užijete balónový let, který končí kolem 8:00, po němž se vrátíte do hotelu. Výlet zahrnuje průvodce na jeden den, nápoje a dopravu. Rezervujte si svůj výlet ještě dnes!",
         highlights: ["Komplex chrámu Karnak", "Chrám v Luxoru v noci", "Údolí králů", "Chrám Hatšepsut", "Kolosy Memnonovy", "Plavba na nilské feluce"],
         gallery: ["Chrám Hatšepsut na západním břehu", "Obelisk Hatšepsut v Karnaku", "Velká hypostylová hala Karnaku", "Cesta k Údolí králů"],
         itinerary: [
@@ -187,7 +187,7 @@ window.ZUZI_I18N = {
         tagline: "Kde je Nil nejkrásnější", bestFor: "Kultura a odpočinek",
         duration: "Celý den · cca 10 hod", durationShort: "10 hodin",
         cardDesc: "Plavte se na ostrov chrámu Philae, stůjte pod mocnou Vysokou přehradou a kliďte se po Nilu na tradiční feluce.",
-        longDesc: "We depart from Marsa Alam or Hurghada for a trip to Aswan, including visits to the High Dam Temple, Philae Temple, and Abu Simbel Temple. The trip lasts two days with one overnight stay. On the first day, you will visit the High Dam Temple and Philae Temple, enjoy a Nile cruise, have lunch, and stay in one of Aswan's most luxurious hotels. On the second day, we will take you to Abu Simbel Temple. The journey from Aswan to Abu Simbel takes approximately 3 hours. The trip includes food, drinks, transportation, and a tour guide for both days. Book your trip now!",
+        longDesc: "Vyjíždíme z Marsa Alam nebo Hurgády na cestu do Asuánu, včetně návštěvy chrámu přehrady, chrámu Philae a chrámu Abu Simbel. Výlet trvá dva dny s jedním přenocováním. První den navštívíte chrám přehrady a chrám Philae, užijete si plavbu po Nilu, oběd a ubytování v jednom z nejluxusnějších hotelů v Asuánu. Druhý den se vydáme k chrámu Abu Simbel, cesta trvá přibližně 3 hodiny. Výlet zahrnuje jídlo, nápoje, dopravu a průvodce po oba dny. Rezervujte si svůj výlet nyní!",
         highlights: ["Chrám Philae (Eset)", "Vysoká přehrada Asuán", "Nedokončený obelisk", "Ostrov Botanická zahrada", "Tradiční plavba na feluce", "Návštěva núbijské vesnice"],
         gallery: ["Chrám Philae na ostrově", "Nastoupení na tradiční feluku", "Klidná plavba na feluce po Nilu", "Lodě plovoucí po Nilu v Asuánu"],
         itinerary: [
@@ -225,7 +225,7 @@ window.ZUZI_I18N = {
         tagline: "Poslední přeživší div starověkého světa", bestFor: "Poprvé navštěvující",
         duration: "Půlden · cca 5 hod", durationShort: "5 hodin",
         cardDesc: "Potkejte Velkou pyramidu Chufua, jeďte mezi pyramidami a odhalte tajemství Velké sfingy na Gízecké plošině.",
-        longDesc: "Our trip from Marsa Alam or Hurghada to the Giza Pyramids in Egypt is a one-day excursion. We'll take you to the pyramids and visit the Grand Egyptian Museum. The trip price includes lunch, and we'll provide a tour guide and a car. What are you waiting for? Book your trip with us now!",
+        longDesc: "Naše cesta z Marsa Alam nebo Hurgády k pyramidám v Gíze je celodenním výletem. Vezmeme vás k pyramidám a navštívíme Velké egyptské muzeum. Cena výletu zahrnuje oběd, průvodce a dopravu. Na co čekáte? Zarezervujte si výlet s námi ještě dnes!",
         highlights: ["Velká pyramida Chufua", "Panoramatické fotomísto", "Velká sfinga", "Údolní chrám", "Volitelná jízda na velbloudovi", "Doplněk Velké egyptské muzeum"],
         gallery: ["Jízda na velbloudovi po Gízecké plošině", "Jízda mezi pyramidami", "Stání vedle Velké pyramidy", "Velká sfinga a pyramidy"],
         itinerary: [
@@ -242,10 +242,10 @@ window.ZUZI_I18N = {
         name: "Marsa Alam", region: "Rudé moře · Egypt",
         tagline: "Nedotčené útesy, delfíni a pouštní noci", bestFor: "Šnorchlování a potápění",
         duration: "Celý den · cca 8 hod", durationShort: "8 hodin",
-        cardDesc: "Plavte se s rotujícími delfíny ve slavném Domě delfínů, šnorchlujte nad panenskými útesy a zakončete den beduínskou večeří pod hvězdami.",
-        longDesc: "Did you know that Satya is more than just a place? Here are some facts and information I discovered about this unique spot. It's the only place on Earth where dolphins have such a close relationship with humans. They seek out and play with people every day. The price includes lunch on board, drinks, and a car. Book now!",
-        highlights: ["Dům delfínů (Sataya)", "Nedotčené korálové útesy", "Šnorchlovací a potápěcí zastávky", "Beduínská večeře", "Pouštní safari na čtyřkolce", "Pozorování hvězd v dunách"],
-        gallery: ["Rotující delfíni na útesu Sataya", "Plavání s divokými delfíny", "Šnorchlovací loď nad korálovými zahradami", "Noční trip pod hvězdami"],
+        cardDesc: "Plavte se s delfíny ve slavném Domě delfínů, šnorchlujte nad panenskými útesy a zakončete den beduínskou večeří pod hvězdami.",
+        longDesc: "Vydejte se z Marsa Alam na výlet k delfínům na Sataye — jedinečnému místu, kde delfíni vyhledávají lidi a hrají si s nimi každý den. V ceně je oběd na palubě, nápoje a doprava. Rezervujte nyní!",
+        highlights: ["Dům delfínů (Sataya)", "Nedotčené korálové útesy", "Šnorchlovací a potápěčské zastávky", "Beduínská večeře", "Pouštní safari na čtyřkolce", "Pozorování hvězd v dunách"],
+        gallery: ["Rotující delfíni na útesu Sataya", "Plavání s divokými delfíny", "Šnorchlovací loď nad koráldovými zahradami", "Noční trip pod hvězdami"],
         itinerary: [
           { title: "Odjezd lodí", text: "Nástup v přístavu a plavba k útesu Sataya." },
           { title: "Dům delfínů", text: "Šnorchlování po boku divokých rotujících delfínů (2 zastávky)." },
@@ -300,7 +300,7 @@ window.ZUZI_I18N = {
         tagline: "Ponořte se pod hladinu, aniž byste se namočili", bestFor: "Rodiny a neplavci",
         duration: "Půlden · cca 3 hod", durationShort: "3 hodiny",
         cardDesc: "Sestupte pod hladinu Rudého moře ve skutečné ponorce a prozkoumejte hluboké korálové zahrady a mořský život přes panoramatická okna — bez plavání.",
-        longDesc: "Vaše dobrodružství začíná v Marsa Alam nebo Hurgádě. Ponorka je specializovaná námořní plavidlo schopné potopení pod hladinu, navigace do velkých hloubek a opětovného vynoření. Funguje na základě Archimédova zákona, čímž řídí svou hmotnost a hustotu pro potápění a vynořování — stejná technologie, která se dříve používala pro vojenské účely, vědecký výzkum a průzkum. Dnes umožňuje každému cestovateli, plavcům i neplavcům, klouzat kolem živých korálových zahrad, heen tropických ryb a tiché krásy hlubin — to vše v naprostém pohodlí za panoramatickými okny. Dokonalý rodinný zážitek, který přináší podvodní svět na dosah každému.",
+        longDesc: "Vaše dobrodružství začíná v Marsa Alam nebo Hurgádě. Ponorka je specializované námořní plavidlo schopné sestoupit pod hladinu, navigovat do velkých hloubek a opět se vynořit. Funguje na základě Archimédova zákona, čímž reguluje svou hmotnost a hustotu pro potápění a vynořování — stejná technologie, která se dříve používala pro vojenské účely, vědecký výzkum a průzkum. Dnes umožňuje každému cestovateli, plavci i neplavci klouzat kolem živých korálových zahrad, hejna tropických ryb a tiché krásy hlubin — to vše v naprostém pohodlí za panoramatickými okny. Dokonalý rodinný zážitek, který přibližuje podvodní svět každému.",
         highlights: ["Skutečné potopení v ponorce", "Panoramatická podvodní okna", "Korálové zahrady v hloubce", "Hejna tropických ryb", "Ideální pro neplavce", "Vhodné pro rodiny"],
         gallery: ["Tropické ryby 25 metrů pod hladinou", "Ponorka sestupuje do hlubin", "Korálové útesy přes iluminátor", "Život na palubě turistické ponorky"],
         itinerary: [
@@ -319,7 +319,7 @@ window.ZUZI_I18N = {
         tagline: "Mezi 25 nejkrásnějšími plážemi světa", bestFor: "Pláž a odpočinek",
         duration: "Celý den · cca 7 hod", durationShort: "7 hodin",
         cardDesc: "Odpočiňte si na pláži Hankorab, 60 km jižně od Marsa Alam v rezervaci Wadi El Gemal — mezi 25 nejkrásnějšími plážemi světa a první na Blízkém východě.",
-        longDesc: "Pokud jste v Marsa Alam a chcete si odpočinout mimo hotel, pláž Sharm El Luli — známá také jako Hankorab — je dokonalým únikem. Leží 60 kilometrů jižně od Marsa Alam v guvernorátu Rudé moře, v chráněné oblasti Wadi El Gemal. V roce 2018 byla zařazena mezi 25 nejkrásnějších pláží světa a na první místo na Blízkém východě, a zůstává jednou z nejvyhledávanějších destinací pro mezinárodní návštěvníky. Pristý oblouk bílého písku se setkává s mělkou tyrkysovou lagunou lemovanou nedotčeným domácím útesem, což z ní činí ideální místo pro plavání, šnorchlování a prostě nasávání klidu jedněch z nejkrásnějších pobřeží Egypta.",
+        longDesc: "Pokud jste v Marsa Alam a chcete si odpočinout mimo hotel, pláž Sharm El Luli — známá také jako Hankorab — je dokonalým únikem. Leží 60 kilometrů jižně od Marsa Alam v guvernorátu Rudé moře, v chráněné oblasti Wadi El Gemal. V roce 2018 byla zařazena mezi 25 nejkrásnějších pláží světa a na prvním místě v Blízkém východě, a zůstává jednou z nejvyhledávanějších destinací pro mezinárodní návštěvníky. Písčitý oblouk bílého písku se setkává s mělkou tyrkysovou lagunou lemovanou nedotčeným pobřežním útesem, což z ní činí ideální místo pro plavání, šnorchlování a prosté nasávání klidu jednoho z nejkrásnějších pobřeží Egypta.",
         highlights: ["Pláž v top 25 světa (2018)", "Chráněná oblast Wadi El Gemal", "Pristý bílý písek", "Tyrkysová laguna", "Nedotčený domácí útes", "Plavání a šnorchlování"],
         gallery: ["Bílý písečný oblouk Hankorab", "Tyrkysová laguna v Sharm El Luli", "Šnorchlování nad nedotčeným útesem", "Odpočinek na jedné z nejlepších pláží světa"],
         itinerary: [
@@ -523,7 +523,7 @@ window.ZUZI_I18N = {
         tagline: "Największe na świecie muzeum pod gołym niebem", bestFor: "Historia i archeologia",
         duration: "Cały dzień · ok. 12 godz", durationShort: "12 godzin",
         cardDesc: "Przechadzaj się wśród kolosalnych kolumn Karnaku i zejdź do królewskich grobowców Doliny Królów na Wschodnim i Zachodnim Brzegu.",
-        longDesc: "Our adventure begins in Marsa Alam or Hurghada with a trip to Luxor, including a one-night stay in one of its hotels. If you'd like to experience a two-day hot air balloon ride, on the first day you'll visit Karnak Temple, the Temple of Hatshepsut, and the Valley of the Kings, cross the Nile by small boat, and have lunch. On the second day, at dawn, you'll enjoy a hot air balloon ride, which concludes around 8:00 AM, after which you'll return to the hotel. The trip includes a one-day tour guide, drinks, and transportation. Book your trip now!",
+        longDesc: "Nasza przygoda zaczyna się w Marsa Alam lub Hurghadzie, skąd wyruszamy do Luksoru, w tym z noclegiem w jednym z lokalnych hoteli. Jeśli chcesz doświadczyć lotu balonem na gorące powietrze, pierwszego dnia odwiedzisz świątynię Karnak, świątynię Hatszepsut i Dolinę Królów, przeprawisz się przez Nil małą łodzią i zjesz lunch. Drugiego dnia o świcie czeka Cię lot balonem, który kończy się około 8:00, po którym wrócisz do hotelu. Wycieczka obejmuje przewodnika na jeden dzień, napoje i transport. Zarezerwuj swoją podróż już dziś!",
         highlights: ["Kompleks świątyni Karnak", "Świątynia w Luksorze nocą", "Dolina Królów", "Świątynia Hatszepsut", "Kolosy Memnona", "Rejs feluką po Nilu"],
         gallery: ["Świątynia Hatszepsut na Zachodnim Brzegu", "Obelisk Hatszepsut w Karnaku", "Wielka sala hipostylowa Karnaku", "Droga do Doliny Królów"],
         itinerary: [
@@ -561,7 +561,7 @@ window.ZUZI_I18N = {
         tagline: "Gdzie Nil jest najpiękniejszy", bestFor: "Kultura i relaks",
         duration: "Cały dzień · ok. 10 godz", durationShort: "10 godzin",
         cardDesc: "Popłyń na wyspę świątyni File, stań pod potężną Wysoką Tamą i zanuć się po Nilu na tradycyjnej feluce.",
-        longDesc: "We depart from Marsa Alam or Hurghada for a trip to Aswan, including visits to the High Dam Temple, Philae Temple, and Abu Simbel Temple. The trip lasts two days with one overnight stay. On the first day, you will visit the High Dam Temple and Philae Temple, enjoy a Nile cruise, have lunch, and stay in one of Aswan's most luxurious hotels. On the second day, we will take you to Abu Simbel Temple. The journey from Aswan to Abu Simbel takes approximately 3 hours. The trip includes food, drinks, transportation, and a tour guide for both days. Book your trip now!",
+        longDesc: "Wyruszamy z Marsa Alam lub Hurghady na wycieczkę do Asuanu, obejmującą wizyty w Świątyni Wysokiej Tamy, Świątyni File i Świątyni Abu Simbel. Wycieczka trwa dwa dni z jedną noclegową. Pierwszego dnia odwiedzisz Świątynię Wysokiej Tamy i Świątynię File, popłyniesz po Nilu, zjesz lunch i zatrzymasz się w jednym z najbardziej luksusowych hoteli w Asuanie. Drugiego dnia udamy się do Świątyni Abu Simbel. Podróż z Asuanu do Abu Simbel trwa około 3 godzin. Wycieczka obejmuje jedzenie, napoje, transport i przewodnika przez obydwa dni. Zarezerwuj swoją podróż już teraz!",
         highlights: ["Świątynia File (Izyda)", "Wysoka Tama w Asuanie", "Niedokończony Obelisk", "Wyspa Ogród Botaniczny", "Tradycyjny rejs feluką", "Wizyta w wiosce nubijskiej"],
         gallery: ["Świątynia File na wyspie", "Wejście na tradycyjną felukę", "Spokojny rejs feluką po Nilu", "Łodzie płynące po Nilu w Asuanie"],
         itinerary: [
@@ -616,8 +616,8 @@ window.ZUZI_I18N = {
         name: "Marsa Alam", region: "Morze Czerwone · Egipt",
         tagline: "Nietknięte rafy, delfiny i pustynne noce", bestFor: "Snorkeling i nurkowanie",
         duration: "Cały dzień · ok. 8 godz", durationShort: "8 godzin",
-        cardDesc: "Pływaj z delfinami długoszczęymi w słynnym Domu Delfinów, snorkeluj nad nietkniętymi rafami i zakończ dzień beduińską kolacją pod gwiazdami.",
-        longDesc: "Did you know that Satya is more than just a place? Here are some facts and information I discovered about this unique spot. It's the only place on Earth where dolphins have such a close relationship with humans. They seek out and play with people every day. The price includes lunch on board, drinks, and a car. Book now!",
+        cardDesc: "Płyń z delfinami ze słynnego Domu Delfinów, snorkeluj nad nietkniętymi rafami i zakończ dzień beduińską kolacją pod gwiazdami.",
+        longDesc: "Wyrusz z Marsa Alam na wycieczkę do Sataya — unikalnego miejsca, w którym delfiny codziennie szukają kontaktu z ludźmi i chętnie się z nimi bawią. Cena obejmuje lunch na pokładzie, napoje i transport. Zarezerwuj już teraz!",
         highlights: ["Dom Delfinów (Sataya)", "Nietknięte rafy koralowe", "Miejsca do snorkelingu i nurkowania", "Beduińska kolacja", "Pustynne safari quadem", "Obserwacja gwiazd na wydmach"],
         gallery: ["Delfiny długoszcze na rafie Sataya", "Pływanie z dzikimi delfinami", "Łódź snorkelingowa nad ogrodami koralowymi", "Nocny wyjazd pod gwiazdami"],
         itinerary: [
@@ -897,7 +897,7 @@ window.ZUZI_I18N = {
         tagline: "أكبر متحف مفتوح في العالم", bestFor: "التاريخ والآثار",
         duration: "يوم كامل · ~12 ساعة", durationShort: "12 ساعة",
         cardDesc: "تجوّل بين الأعمدة الضخمة في الكرنك وانزل إلى المقابر الملكية في وادي الملوك على الضفتين الشرقية والغربية.",
-        longDesc: "كانت الأقصر عاصمة طيبة القديمة العظيمة، وتحوي تركيزاً لا يضاهى من الآثار. جولتنا ليوم كامل تعبر ضفتي النيل — من قاعة الأعمدة الضخمة في الكرنك إلى المقابر المرسومة المخبأة عميقاً في وادي الملوك. يُحيي مرشد عالم المصريات المرخّص كل هيروغليفية، بينما يضمن النقل المريح وغداء على ضفاف النهر يوماً بلا متاعب.",
+        longDesc: "تبدأ مغامرتنا في مرسى علم أو الغردقة برحلة إلى الأقصر، تشمل إقامة ليلة واحدة في أحد فنادقها. إذا رغبتم بتجربة رحلة منطاد لمدة يومين، ففي اليوم الأول ستزورون معبد الكرنك، ومعبد حتشبسوت، ووادي الملوك، وتعبرون النيل بقارب صغير، وتتناولون الغداء. في اليوم الثاني، عند الفجر، ستستمتعون برحلة منطاد تنتهي حوالي الساعة 8:00 صباحًا، وبعدها ستعودون إلى الفندق. تشمل الرحلة مرشدًا سياحيًا ليوم واحد، والمشروبات، والمواصلات. احجزوا رحلتكم الآن.",
         highlights: ["مجمّع معبد الكرنك", "معبد الأقصر ليلاً", "وادي الملوك", "معبد حتشبسوت", "تمثالا ممنون", "رحلة بالفلوكة على النيل"],
         gallery: ["معبد حتشبسوت على الضفة الغربية", "مسلة حتشبسوت في الكرنك", "قاعة الأعمدة الكبرى في الكرنك", "الطريق نحو وادي الملوك"],
         itinerary: [
@@ -935,7 +935,7 @@ window.ZUZI_I18N = {
         tagline: "حيث يكون النيل في أبهى صوره", bestFor: "الثقافة والاسترخاء",
         duration: "يوم كامل · ~10 ساعات", durationShort: "10 ساعات",
         cardDesc: "أبحر إلى جزيرة معبد فيلة، وقف تحت السد العالي العظيم، وانزلق على النيل بفلوكة تقليدية.",
-        longDesc: "أسوان أكثر هدوءاً وخضرة من أي مكان آخر على النيل — مدينة نوبية غارقة في الشمس من جزر وصخور الجرانيت وقوارب شراعية. تجمع هذه الجولة بين معبد فيلة الأيقوني (الذي أُنقذ من المياه المرتفعة) ومعجزة السد العالي الهندسية، والمسلة غير المنحوتة القديمة، ورحلة هادئة بالفلوكة حول جزيرة الفنتين والحديقة النباتية.",
+        longDesc: "ننطلق من مرسى علم أو الغردقة في رحلة إلى أسوان، تشمل زيارة معبد السد العالي، ومعبد فيلة، ومعبد أبو سمبل. تستغرق الرحلة يومين مع مبيت ليلة واحدة. في اليوم الأول، ستزورون معبد السد العالي ومعبد فيلة، وتستمتعون برحلة نيلية، وتتناولون الغداء، وتقيمون في أحد أفخم فنادق أسوان. في اليوم الثاني، سنأخذكم إلى معبد أبو سمبل. تستغرق الرحلة من أسوان إلى أبو سمبل حوالي 3 ساعات. تشمل الرحلة الطعام والشراب والمواصلات ومرشدًا سياحيًا لكلا اليومين. احجز رحلتك الآن!",
         highlights: ["معبد فيلة (إيزيس)", "السد العالي في أسوان", "المسلة غير المنحوتة", "جزيرة الحديقة النباتية", "رحلة بالفلوكة التقليدية", "زيارة قرية نوبية"],
         gallery: ["معبد فيلة على جزيرته", "الصعود إلى فلوكة تقليدية", "رحلة هادئة بالفلوكة على النيل", "قوارب تطفو على النيل في أسوان"],
         itinerary: [
@@ -973,7 +973,7 @@ window.ZUZI_I18N = {
         tagline: "آخر عجائب الدنيا القديمة الباقية", bestFor: "الزوار لأول مرة",
         duration: "نصف يوم · ~5 ساعات", durationShort: "5 ساعات",
         cardDesc: "تعرف على الهرم الأكبر لخوفو، تجوّل بين الأهرامات، واكتشف لغز أبو الهول العظيم على هضبة الجيزة.",
-        longDesc: "لا تكتمل أي رحلة إلى مصر دون الوقوف عند سفح أهرامات الجيزة العظيمة — العجيبة الوحيدة من عجائب الدنيا القديمة التي لا تزال قائمة. تغطي هذه التجربة لنصف يوم الهضبة بأكملها: الهرم الأكبر لخوفو، وأهرامات خفرع ومنقرع، ونقطة بانورامية مثالية للصور، وأبو الهول العظيم الغامض بمعبده الوادي. تتيح الإضافات الاختيارية الدخول داخل هرم أو زيارة المتحف المصري الكبير.",
+        longDesc: "رحلتنا من مرسى علم أو الغردقة إلى أهرامات الجيزة في مصر هي رحلة ليوم واحد. سنأخذكم إلى الأهرامات ونزور المتحف المصري الكبير. يشمل سعر الرحلة وجبة الغداء، وسنوفر لكم مرشدًا سياحيًا وسيارة. ماذا تنتظرون؟ احجزوا رحلتكم معنا الآن!",
         highlights: ["الهرم الأكبر لخوفو", "نقطة التصوير البانورامية", "أبو الهول العظيم", "المعبد الوادي", "جملة اختيارية", "إضافة المتحف المصري الكبير"],
         gallery: ["جولة على الجمل عبر هضبة الجيزة", "الركوب بين الأهرامات", "الوقوف بجوار الهرم الأكبر", "أبو الهول العظيم والأهرامات"],
         itinerary: [
@@ -991,7 +991,7 @@ window.ZUZI_I18N = {
         tagline: "شعاب بكر، دلافين وليالٍ صحراوية", bestFor: "الغوص والسباحة",
         duration: "يوم كامل · ~8 ساعات", durationShort: "8 ساعات",
         cardDesc: "اسبح مع الدلافين الدوارة في بيت الدلافين الشهير، وغوص فوق شعاب بكر، واختتم اليوم بعشاء بدوي تحت النجوم.",
-        longDesc: "Did you know that Satya is more than just a place? Here are some facts and information I discovered about this unique spot. It's the only place on Earth where dolphins have such a close relationship with humans. They seek out and play with people every day. The price includes lunch on board, drinks, and a car. Book now!",
+        longDesc: "هل تعلم أن ساتيا أكثر من مجرد مكان؟ إليك بعض الحقائق والمعلومات التي اكتشفتها عن هذا الموقع الفريد. إنه المكان الوحيد على وجه الأرض الذي تربط فيه الدلافين علاقة وثيقة بالبشر، حيث تبحث عنهم وتلعب معهم يوميًا. يشمل السعر وجبة غداء على متن القارب، والمشروبات، وسيارة. احجز الآن!",
         highlights: ["بيت الدلافين (ساتايا)", "شعاب مرجانية بكر", "محطات سباحة وغوص", "عشاء بدوي", "سفاري صحراوي بالدراجة الرباعية", "رصد النجوم في الكثبان"],
         gallery: ["الدلافين الدوارة في شعاب ساتايا", "السباحة مع الدلافين البرية", "قارب السباحة فوق الحدائق المرجانية", "رحلة ليلية تحت النجوم"],
         itinerary: [
