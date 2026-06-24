@@ -36,7 +36,7 @@ window.ZUZI_TOURS = [
       { icon: "ri-ship-line", title: "Nile felucca sail" },
     ],
     gallery: [
-      { src: "assets/images/gallery/luxor/1.jpeg", caption: "Temple of Hatshepsut on the West Bank" },
+      { src: "assets/images/gallery/luxor/1.webp", caption: "Temple of Hatshepsut on the West Bank" },
       { src: "assets/images/gallery/luxor/2.jpg", caption: "Obelisk of Hatshepsut at Karnak" },
       { src: "assets/images/gallery/luxor/3.jpg", caption: "The great hypostyle hall of Karnak" },
       { src: "assets/images/gallery/luxor/4.jpg", caption: "Approaching the Valley of the Kings" },
@@ -80,7 +80,7 @@ window.ZUZI_TOURS = [
       { icon: "ri-store-2-line", title: "Nubian village visit" },
     ],
     gallery: [
-      { src: "assets/images/gallery/aswan/1.jpeg", caption: "Philae Temple on its island" },
+      { src: "assets/images/gallery/aswan/1.webp", caption: "Philae Temple on its island" },
       { src: "assets/images/gallery/aswan/2.jpg", caption: "Boarding a traditional felucca" },
       { src: "assets/images/gallery/aswan/3.jpg", caption: "A peaceful felucca sail on the Nile" },
       { src: "assets/images/gallery/aswan/4.jpg", caption: "Boats drifting on the Nile at Aswan" },
@@ -125,9 +125,9 @@ window.ZUZI_TOURS = [
     ],
     gallery: [
       { src: "assets/images/gallery/abu-simbel/1.jpg", caption: "Aerial view of the temple complex" },
-      { src: "assets/images/gallery/abu-simbel/2.jpeg", caption: "The colossi at sunset over Lake Nasser" },
+      { src: "assets/images/gallery/abu-simbel/2.webp", caption: "The colossi at sunset over Lake Nasser" },
       { src: "assets/images/gallery/abu-simbel/3.jpg", caption: "Cruising toward Abu Simbel on Lake Nasser" },
-      { src: "assets/images/gallery/abu-simbel/4.jpeg", caption: "Detail of the Temple of Nefertari" },
+      { src: "assets/images/gallery/abu-simbel/4.webp", caption: "Detail of the Temple of Nefertari" },
     ],
     itinerary: [
       { time: "04:30", title: "Early departure", text: "Road transfer across the desert (convoy safety) — or optional flight." },
@@ -190,7 +190,7 @@ window.ZUZI_TOURS = [
     region: "Red Sea · Egypt",
     icon: "ri-ship-2-line",
     tagline: "Pristine reefs, dolphins and desert nights",
-    image: "assets/images/marsa-alam.jpeg",
+    image: "assets/images/marsa-alam.webp",
     rating: 4.8,
     reviews: 876,
     duration: "Full day · ~8 hrs",
@@ -211,14 +211,10 @@ window.ZUZI_TOURS = [
       { icon: "ri-star-smile-line", title: "Stargazing in the dunes" },
     ],
     gallery: [
-      { src: "assets/images/gallery/marsa-alam/1.jpeg", caption: "Spinner dolphins at Sataya Reef" },
-      { src: "assets/images/gallery/marsa-alam/2.jpeg", caption: "Swimming alongside wild dolphins" },
-      { src: "assets/images/gallery/marsa-alam/3.jpeg", caption: "Snorkel boat over the coral gardens" },
-      { src: "assets/images/gallery/marsa-alam/4.jpeg", caption: "An overnight trip under the stars" },
-      { src: "assets/images/gallery/marsa-alam/5.jpeg", caption: "Spinner dolphins at Sataya Reef" },
-      { src: "assets/images/gallery/marsa-alam/6.jpeg", caption: "Swimming alongside wild dolphins" },
-      { src: "assets/images/gallery/marsa-alam/7.jpeg", caption: "Snorkel boat over the coral gardens" },
-      { src: "assets/images/gallery/marsa-alam/8.jpeg", caption: "An overnight trip under the stars" },
+      { src: "assets/images/gallery/marsa-alam/1.webp", caption: "Spinner dolphins at Sataya Reef" },
+      { src: "assets/images/gallery/marsa-alam/2.webp", caption: "Swimming alongside wild dolphins" },
+      { src: "assets/images/gallery/marsa-alam/3.webp", caption: "Snorkel boat over the coral gardens" },
+      { src: "assets/images/gallery/marsa-alam/4.webp", caption: "An overnight trip under the stars" },
     ],
     itinerary: [
       { time: "08:00", title: "Boat departure", text: "Board at the marina and cruise toward Sataya Reef." },

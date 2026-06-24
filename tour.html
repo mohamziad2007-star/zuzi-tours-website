@@ -4,20 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tour — Zuzi Tours</title>
-  <meta name="description" content="Tour details, schedule and pricing with Zuzi Tours. Book instantly on WhatsApp.">
+  <meta name="description" content="Tour details, schedule and booking with Zuzi Tours. Book instantly on WhatsApp.">
   <meta name="theme-color" content="#1a3c40">
+
+  <!-- Apply saved language + RTL before paint -->
+  <script>
+    (function () {
+      var l = localStorage.getItem("zuzi-lang") || "en";
+      document.documentElement.lang = l;
+      document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
+    })();
+  </script>
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231a3c40'/><path d='M5 25 L13 8 L17 16 L20 11 L27 25 Z' fill='%234ecdc4'/></svg>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!-- ============ HEADER ============ -->
   <header>
     <div class="header-layout">
       <a href="index.html" class="brand-mark">
@@ -25,43 +35,59 @@
         ZUZI TOURS
       </a>
       <nav class="main-nav" aria-label="Primary">
-        <a href="index.html#hero">Home</a>
-        <a href="index.html#tours">Destinations</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#footer">Contact</a>
+        <a href="index.html#hero" data-i18n="nav.home">Home</a>
+        <a href="index.html#tours" data-i18n="nav.destinations">Destinations</a>
+        <a href="index.html#about" data-i18n="nav.about">About</a>
+        <a href="index.html#footer" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="nav-actions">
+        <div class="lang-switch">
+          <button class="lang-btn" data-i18n-aria="lang.label">
+            <i class="ri-translate-2"></i>
+            <span class="lang-current">EN</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </button>
+          <div class="lang-menu">
+            <button data-lang="en">English</button>
+            <button data-lang="cs">Čeština</button>
+            <button data-lang="pl">Polski</button>
+            <button data-lang="ar">العربية</button>
+          </div>
+        </div>
         <button class="theme-toggle" aria-label="Toggle theme"><i class="ri-moon-line"></i></button>
         <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><i class="ri-menu-line"></i></button>
       </div>
     </div>
     <div class="mobile-menu" id="mobileMenu">
       <nav class="mobile-nav" aria-label="Mobile">
-        <a href="index.html#hero">Home</a>
-        <a href="index.html#tours">Destinations</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#footer">Contact</a>
+        <a href="index.html#hero" data-i18n="nav.home">Home</a>
+        <a href="index.html#tours" data-i18n="nav.destinations">Destinations</a>
+        <a href="index.html#about" data-i18n="nav.about">About</a>
+        <a href="index.html#footer" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- Populated by js/control.js based on ?id= -->
     <div id="tour-detail"></div>
 
+    <!-- Related tours -->
     <section class="related">
       <div class="section-head">
-        <span class="eyebrow"><i class="ri-compass-discover-line"></i> Keep exploring</span>
-        <h2 class="section-title">You may also like</h2>
+        <span class="eyebrow"><i class="ri-compass-discover-line"></i> <span data-i18n="detail.keepExploring">Keep exploring</span></span>
+        <h2 class="section-title" data-i18n="detail.youMayLike">You may also like</h2>
       </div>
       <div class="container" id="related-tours"></div>
     </section>
   </main>
 
+  <!-- ============ FOOTER ============ -->
   <footer class="site-footer" id="footer">
     <div class="footer-top">
       <div class="footer-brand">
         <a href="index.html" class="brand-mark"><span class="brand-logo"><i class="ri-compass-3-line"></i></span> ZUZI TOURS</a>
-        <p>A specialized Egyptian travel company crafting trusted, professional journeys across Luxor, Aswan, Abu Simbel, the Giza Pyramids and the Red Sea.</p>
+        <p data-i18n="footer.about">A specialized Egyptian travel company crafting trusted, professional journeys across Luxor, Aswan, Abu Simbel, the Giza Pyramids and the Red Sea.</p>
         <div class="social-row">
           <a class="social-btn" data-social-instagram href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
           <a class="social-btn" data-social-facebook href="#" aria-label="Facebook"><i class="ri-facebook-circle-line"></i></a>
@@ -71,7 +97,7 @@
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Destinations</h4>
+        <h4 class="footer-heading" data-i18n="footer.destinations">Destinations</h4>
         <ul class="footer-links">
           <li><a href="tour.html?id=luxor"><i class="ri-arrow-right-s-line"></i> Luxor</a></li>
           <li><a href="tour.html?id=aswan"><i class="ri-arrow-right-s-line"></i> Aswan</a></li>
@@ -83,41 +109,42 @@
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Company</h4>
+        <h4 class="footer-heading" data-i18n="footer.company">Company</h4>
         <ul class="footer-links">
-          <li><a href="index.html#about"><i class="ri-arrow-right-s-line"></i> About us</a></li>
-          <li><a href="index.html#tours"><i class="ri-arrow-right-s-line"></i> All tours</a></li>
-          <li><a data-wa data-wa-msg="Hello! I'd like to become a partner / agent with Zuzi Tours." href="#"><i class="ri-arrow-right-s-line"></i> Partners</a></li>
+          <li><a href="index.html#about"><i class="ri-arrow-right-s-line"></i> <span data-i18n="footer.aboutUs">About us</span></a></li>
+          <li><a href="index.html#tours"><i class="ri-arrow-right-s-line"></i> <span data-i18n="footer.allTours">All tours</span></a></li>
+          <li><a data-wa data-wa-key="wa.partner" href="#"><i class="ri-arrow-right-s-line"></i> <span data-i18n="footer.partners">Partners</span></a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Get in touch</h4>
+        <h4 class="footer-heading" data-i18n="footer.contact">Get in touch</h4>
         <ul class="footer-contact">
           <li><i class="ri-map-pin-2-line"></i> <span data-location-display></span></li>
           <li><i class="ri-phone-line"></i> <a data-phone href="#"><span data-phone-display></span></a></li>
           <li><i class="ri-mail-line"></i> <a data-email href="#"><span data-email-display></span></a></li>
-          <li><i class="ri-time-line"></i> Every day · 8:00 AM – 10:00 PM</li>
+          <li><i class="ri-time-line"></i> <span data-i18n="footer.hours">Every day · 8:00 AM – 10:00 PM</span></li>
         </ul>
-        <a class="btn btn-whatsapp" data-wa data-wa-msg="Hello Zuzi Tours! I'd like to chat about booking a tour." href="#" style="margin-top:8px;">
-          <i class="ri-whatsapp-line"></i> Message us
+        <a class="btn btn-whatsapp" data-wa data-wa-key="wa.chat" href="#" style="margin-top:8px;">
+          <i class="ri-whatsapp-line"></i> <span data-i18n="footer.messageUs">Message us</span>
         </a>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <span>© <span id="year"></span> Zuzi Tours. All rights reserved.</span>
+      <span>© <span id="year"></span> Zuzi Tours. <span data-i18n="footer.rights">All rights reserved.</span></span>
       <div class="footer-legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms &amp; Conditions</a>
+        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer.terms">Terms &amp; Conditions</a>
       </div>
     </div>
   </footer>
 
-  <a class="wa-fab" data-wa data-wa-msg="Hello Zuzi Tours! I'm interested in your Egypt tours." href="#" aria-label="Chat on WhatsApp"><i class="ri-whatsapp-line"></i></a>
+  <a class="wa-fab" data-wa data-wa-key="wa.interested" href="#" aria-label="Chat on WhatsApp"><i class="ri-whatsapp-line"></i></a>
   <button class="to-top" aria-label="Back to top"><i class="ri-arrow-up-line"></i></button>
 
   <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/tours-data.js"></script>
   <script src="js/control.js"></script>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>

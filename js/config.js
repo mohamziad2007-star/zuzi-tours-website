@@ -12,7 +12,7 @@ window.ZUZI_CONFIG = {
 
   /* ---- WhatsApp / Booking -----------------------------------
      International format, DIGITS ONLY (no "+", spaces or dashes).
-     👉 Replace the placeholder below with the real number.       */
+     Replace the placeholder below with the real number.       */
   whatsapp: "201000000000",
   whatsappDisplay: "+20 100 000 0000",
 
@@ -54,7 +54,7 @@ window.zuziWhatsApp = function (message) {
   const number = String(window.ZUZI_CONFIG.whatsapp || "").replace(/\D/g, "");
   const text = encodeURIComponent(
     message ||
-      "Hello Zuzi Tours! 👋 I would like to know more about your tours in Egypt."
+      "Hello Zuzi Tours! I would like to know more about your tours in Egypt."
   );
   return `https://wa.me/${number}?text=${text}`;
 };

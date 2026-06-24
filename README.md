@@ -1,71 +1,65 @@
 # Zuzi Tours — Website
 
-A professional, responsive travel website for **Zuzi Tours**, built on the
-original foundation design (brand teal palette, Playfair / Cormorant / DM Sans
-typography, soft hero overlay and elevated cards).
+A professional, responsive, **multilingual** travel website for **Zuzi Tours**.
 
-## ✨ What's included
+## ✨ Features
+
+- **4 languages** — English, Czech (Čeština), Polish (Polski), Arabic (العربية)
+  - Full UI + tour content translated for every language
+  - Arabic automatically switches to **RTL** layout
+  - Language choice is remembered (saved in the browser)
+  - Language switcher in the header (top-right)
+- **Data-driven tours** — add/edit tours in one file (`js/tours-data.js`)
+- **Past Trips Gallery** — collapsible photo grid + lightbox on every tour page
+- **Book Now → WhatsApp** with a pre-filled, translated message
+- **No pricing on the site** — bookings happen via WhatsApp chat
+- Light / dark theme toggle (remembers your choice)
+- Fully responsive (desktop, tablet, mobile with slide-down menu)
+
+## 📁 Files
 
 | File | Purpose |
 |------|---------|
 | `index.html` | Landing page — hero, about, destinations grid, CTA, footer |
 | `tour.html` | Dynamic tour detail page (reads `?id=` from the URL) |
-| `css/style.css` | All styling (light + dark themes, fully responsive) |
-| `js/config.js` | **Single source of truth** — WhatsApp number, contact, social |
-| `js/tours-data.js` | Tour catalogue (destinations, prices, itineraries) |
-| `js/control.js` | Renders cards, detail pages, theme toggle, mobile nav |
-| `assets/images/` | Hero + one photo per destination |
+| `css/style.css` | All styling (light + dark + RTL, fully responsive) |
+| `js/config.js` | Contact details, WhatsApp number, social links |
+| `js/i18n.js` | Translations + i18n engine (4 languages) |
+| `js/tours-data.js` | Tour catalogue (destinations, itineraries, galleries) |
+| `js/control.js` | Rendering, theme, mobile nav, gallery, language switching |
+| `assets/images/` | Hero + photos per destination + gallery folders |
 
-## 🔧 Before you go live — 3 quick edits
+## 🔧 Before you go live
 
-### 1. WhatsApp number (most important)
+### 1. WhatsApp number
 Open **`js/config.js`** and replace the placeholder:
-
 ```js
-whatsapp: "201000000000",          // digits only, with country code
-whatsappDisplay: "+20 100 000 0000",
+whatsapp: "201000000000",   // digits only, with country code
 phone: "+20 100 000 0000",
 email: "hello@zuzitours.com",
 ```
 
-> Format: country code + number, **digits only** — e.g. `201234567890`.
-> Every "Book Now" / contact button updates automatically.
+### 2. Social links
+Still in **`js/config.js`**, under `social:` — replace the placeholder URLs.
 
-### 2. Prices, durations & descriptions
-Open **`js/tours-data.js`**. Each tour is one object you can edit:
+## 🌍 Translations
 
-```js
-{
-  id: "luxor",            // used in the URL: tour.html?id=luxor
-  name: "Luxor",
-  price: 1800,            // EGP — change freely
-  duration: "Full day · ~12 hrs",
-  // ...highlights, itinerary, included/excluded, etc.
-}
-```
+All text lives in **`js/i18n.js`**. English UI strings are there, and English
+tour content comes from `js/tours-data.js`. Czech, Polish and Arabic include
+both UI strings and full tour content (under `tourData`).
 
-### 3. Social links
-Still in **`js/config.js`**, under `social:` — replace the `#`/placeholder URLs.
+To edit a translation, find the language block (`cs`, `pl`, or `ar`) and update
+the string. To add a new language, add a block to `ZUZI_I18N` and an entry to
+`ZUZI_LANGS`.
 
-## ➕ Add a new tour (no HTML needed)
-1. Copy any object in `js/tours-data.js`.
-2. Give it a unique `id` and a new `image` in `assets/images/`.
-3. Save. It appears on the home grid and gets its own page at
-   `tour.html?id=<your-id>` automatically.
-
-## 🎨 Features
-- ✅ Data-driven: add/edit tours in one file
-- ✅ **Book Now → WhatsApp** with a pre-filled message (tour name + price)
-- ✅ Light / dark theme toggle (remembers your choice)
-- ✅ Fully responsive (desktop, tablet, mobile with slide-down menu)
-- ✅ Floating WhatsApp button + back-to-top
-- ✅ SEO meta tags + Open Graph
+## ➕ Add a new tour
+1. Add an object to `js/tours-data.js` with a unique `id`.
+2. Add translations for it under each language's `tourData` in `js/i18n.js`.
+3. Add photos to `assets/images/gallery/<id>/`.
+4. Done — it appears on the home grid and gets its own page.
 
 ## 🚀 Preview
-Just open `index.html` in a browser. (No build step needed.)
-For best results with the fonts, serve over a local server, e.g.:
-
 ```bash
 python3 -m http.server 8000
-# then visit http://localhost:8000
+# visit http://localhost:8000
 ```

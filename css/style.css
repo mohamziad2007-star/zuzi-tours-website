@@ -206,7 +206,9 @@ header {
 .header-layout.active .brand-mark,
 .header-layout.active .main-nav a,
 .header-layout.active .menu-btn,
-.header-layout.active .theme-toggle {
+.header-layout.active .theme-toggle,
+.header-layout.active .lang-btn,
+.header-layout.active .lang-current {
   color: var(--color-text-primary);
 }
 
@@ -459,6 +461,15 @@ section {
   margin-top: 38px;
 }
 
+.hero-stats {
+  position: absolute;
+  z-index: 3;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 14px;
+}
 
 .stat-pill {
   display: inline-flex;
@@ -729,19 +740,6 @@ section {
 
 .tour-card:hover .media img {
   transform: scale(1.07);
-}
-
-.tour-card .price-tag {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: var(--color-brand-primary);
-  color: #fff;
-  padding: 7px 13px;
-  border-radius: var(--radius-badge);
-  font-size: 0.82rem;
-  font-weight: 700;
-  backdrop-filter: blur(4px);
 }
 
 .tour-card .region-tag {
@@ -1136,29 +1134,23 @@ section {
   border-bottom: 1px solid var(--color-border-subtle);
 }
 
-.booking-card .price {
+.booking-card .bc-heading {
   display: flex;
-  align-items: baseline;
-  gap: 8px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.booking-card .price .amount {
+.booking-card .bc-title {
   font-family: var(--font-display);
-  font-size: 2.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--color-text-primary);
+  line-height: 1.2;
 }
 
-.booking-card .price .unit {
-  font-size: 0.85rem;
+.booking-card .bc-subtitle {
+  font-size: 0.88rem;
   color: var(--color-text-muted);
-}
-
-.booking-card .price .strike {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-  text-decoration: line-through;
 }
 
 .booking-card .bc-list {
@@ -1553,6 +1545,7 @@ section {
   gap: 22px;
 }
 
+/* Floating WhatsApp button */
 .wa-fab {
   position: fixed;
   right: 22px;
@@ -1589,6 +1582,7 @@ section {
   100% { transform: scale(1.7); opacity: 0; }
 }
 
+/* Back to top */
 .to-top {
   position: fixed;
   right: 24px;
@@ -1617,6 +1611,175 @@ section {
   transform: translateY(0);
 }
 
+/* ============================================================
+   LANGUAGE SWITCHER
+   ============================================================ */
+.lang-switch {
+  position: relative;
+}
+
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  padding: 0 12px;
+  height: 38px;
+  cursor: pointer;
+  font-family: var(--font-nav);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.lang-btn i:first-child {
+  font-size: 1.05rem;
+}
+
+.lang-btn .lang-current {
+  min-width: 20px;
+  text-align: center;
+}
+
+.lang-btn i:last-child {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  inset-inline-end: 0;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+  padding: 6px;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 1001;
+}
+
+.lang-menu.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.lang-menu button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  padding: 9px 12px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: start;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.lang-menu button:hover {
+  background: var(--color-bg-overlay);
+  color: var(--color-brand-accent);
+}
+
+.lang-menu button.active {
+  background: var(--color-bg-overlay);
+  color: var(--color-brand-accent);
+  font-weight: 700;
+}
+
+.lang-menu button.active::before {
+  content: "\EB7B"; /* ri-check-line */
+  font-family: "remixicon";
+  font-size: 1rem;
+  margin-inline-end: -2px;
+}
+
+/* ============================================================
+   RTL (Arabic) SUPPORT
+   ============================================================ */
+[dir="rtl"] body {
+  font-family: "Tajawal", var(--font-body);
+}
+
+[dir="rtl"] .hero-title {
+  letter-spacing: 0;
+  font-family: var(--font-serif);
+}
+
+[dir="rtl"] .header-layout,
+[dir="rtl"] .section-title,
+[dir="rtl"] .about-title,
+[dir="rtl"] .tour-hero h1,
+[dir="rtl"] .cta-band h2,
+[dir="rtl"] .footer-heading {
+  letter-spacing: 0;
+}
+
+[dir="rtl"] .timeline {
+  margin-left: 0;
+  margin-right: 6px;
+  padding-left: 0;
+  padding-right: 30px;
+  border-left: none;
+  border-right: 2px dashed var(--color-border-medium);
+}
+
+[dir="rtl"] .timeline-item::before {
+  left: auto;
+  right: -39px;
+}
+
+[dir="rtl"] .footer-links a:hover {
+  padding-left: 0;
+  padding-right: 4px;
+}
+
+[dir="rtl"] .tour-card:hover .view-link i,
+[dir="rtl"] .view-link i {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .tour-card:hover .view-link i {
+  transform: scaleX(-1) translateX(4px);
+}
+
+[dir="rtl"] .breadcrumb i {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .to-top {
+  right: auto;
+  left: 24px;
+}
+
+[dir="rtl"] .wa-fab {
+  right: auto;
+  left: 22px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
 @media (max-width: 1024px) {
   .tour-body {
     grid-template-columns: 1fr;
@@ -1682,6 +1845,11 @@ section {
   .header-layout {
     padding: 8px 8px 8px 16px;
     gap: 10px;
+  }
+
+  .lang-btn {
+    padding: 0 9px;
+    font-size: 0.76rem;
   }
 
   .hero-stats {

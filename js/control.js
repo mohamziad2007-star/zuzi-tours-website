@@ -1,8 +1,8 @@
 /* ============================================================
    ZUZI TOURS — Front-end controller
-   Handles: theming, header behaviour, mobile menu, data-driven
-   rendering of tour cards + the dynamic tour detail page, and
-   wiring all WhatsApp / contact links from config.js.
+   Handles: theming, header behaviour, mobile menu, i18n,
+   data-driven rendering of tour cards + the dynamic tour
+   detail page, gallery, and wiring all WhatsApp / contact links.
    ============================================================ */
 
 (function () {
@@ -10,6 +10,8 @@
 
   const CFG = window.ZUZI_CONFIG || {};
   const TOURS = window.ZUZI_TOURS || [];
+  const t = window.t || ((k) => k);
+  const zuziTour = window.zuziTour || ((tour) => tour);
 
   /* ---------- small helpers ---------- */
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
@@ -24,7 +26,6 @@
       "'": "&#39;",
     }[c]));
 
-  const money = window.zuziMoney || ((n) => n);
   const wa = window.zuziWhatsApp || ((m) => "#");
 
   const getTour = (id) => TOURS.find((t) => t.id === id);
@@ -110,7 +111,7 @@
      Sets hrefs/text for every contact + WhatsApp element.
      ===================================================== */
   function wireConfig() {
-    $$("[data-whatsapp-display]").forEach(
+    $$( "[data-whatsapp-display]" ).forEach(
       (el) => (el.textContent = CFG.whatsappDisplay || "")
     );
     $$("[data-phone]").forEach((el) => (el.href = "tel:" + String(CFG.phone).replace(/\s/g, "")));
@@ -126,9 +127,11 @@
       $$("[data-social-tripadvisor]").forEach((el) => (el.href = CFG.social.tripadvisor || "#"));
     }
 
-    // WhatsApp links: <a data-wa> uses href, <button data-wa> opens window
+    // WhatsApp links: data-wa-key (translated via i18n) or data-wa-msg (literal)
     $$("[data-wa]").forEach((el) => {
-      const msg = el.getAttribute("data-wa-msg") || "";
+      let msg = el.getAttribute("data-wa-msg") || "";
+      const key = el.getAttribute("data-wa-key");
+      if (key) msg = t(key);
       const url = wa(msg);
       if (el.tagName === "A") {
         el.href = url;
@@ -140,24 +143,28 @@
     });
   }
 
-  function tourCardHTML(t) {
+  /* =====================================================
+     BUILD A TOUR CARD (used on home + related)
+     Localised via zuziTour(); no price shown.
+     ===================================================== */
+  function tourCardHTML(rawTour) {
+    const tour = zuziTour(rawTour);
     return `
-      <a class="tour-card" href="tour.html?id=${encodeURIComponent(t.id)}">
+      <a class="tour-card" href="tour.html?id=${encodeURIComponent(tour.id)}">
         <div class="media">
-          <img src="${escapeHTML(t.image)}" alt="${escapeHTML(t.name)}" loading="lazy">
-          <span class="region-tag"><i class="ri-map-pin-2-line"></i> ${escapeHTML(t.region)}</span>
-          <span class="price-tag">${money(t.price)}</span>
+          <img src="${escapeHTML(tour.image)}" alt="${escapeHTML(tour.name)}" loading="lazy">
+          <span class="region-tag"><i class="ri-map-pin-2-line"></i> ${escapeHTML(tour.region)}</span>
         </div>
         <div class="body">
           <div class="rating">
-            <i class="ri-star-fill"></i> <b>${t.rating ?? "5.0"}</b>
-            <span>(${(t.reviews ?? 0).toLocaleString()} reviews)</span>
+            <i class="ri-star-fill"></i> <b>${tour.rating ?? "5.0"}</b>
+            <span>(${(tour.reviews ?? 0).toLocaleString()} ${escapeHTML(t("tours.reviews"))})</span>
           </div>
-          <h3>${escapeHTML(t.name)}</h3>
-          <p class="desc">${escapeHTML(t.cardDesc)}</p>
+          <h3>${escapeHTML(tour.name)}</h3>
+          <p class="desc">${escapeHTML(tour.cardDesc)}</p>
           <div class="card-foot">
-            <span class="duration"><i class="ri-time-line"></i> ${escapeHTML(t.durationShort)}</span>
-            <span class="view-link">View tour <i class="ri-arrow-right-line"></i></span>
+            <span class="duration"><i class="ri-time-line"></i> ${escapeHTML(tour.durationShort)}</span>
+            <span class="view-link">${escapeHTML(t("tours.viewTour"))} <i class="ri-arrow-right-line"></i></span>
           </div>
         </div>
       </a>`;
@@ -177,19 +184,21 @@
     if (!root) return;
 
     const params = new URLSearchParams(window.location.search);
-    const tour = getTour(params.get("id"));
+    const rawTour = getTour(params.get("id"));
 
-    if (!tour) {
+    if (!rawTour) {
       renderNotFound(root);
       return;
     }
 
+    const tour = zuziTour(rawTour);
     document.title = `${tour.name} — Zuzi Tours`;
 
-    const bookingMsg =
-      `Hello Zuzi Tours! I'd like to book the *${tour.name}* tour ` +
-      `(${tour.duration}). Listed price: ${money(tour.price)} ${tour.priceUnit || "per person"}. ` +
-      `Could you share availability & next departure dates? Thank you!`;
+    const bookingMsg = t("wa.bookTour")
+      .replace("{tour}", tour.name)
+      .replace("{duration}", tour.duration);
+
+    const askMsg = t("wa.askTour").replace("{tour}", tour.name);
 
     const highlights = (tour.highlights || [])
       .map(
@@ -212,6 +221,7 @@
       .join("");
 
     const galleryCount = (tour.gallery || []).length;
+    const viewPhotosLabel = t("detail.viewPhotos").replace("{n}", galleryCount);
 
     const itinerary = (tour.itinerary || [])
       .map(
@@ -237,9 +247,9 @@
         <div class="scrim"></div>
         <div class="inner">
           <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="index.html">Home</a>
+            <a href="index.html">${escapeHTML(t("detail.home"))}</a>
             <i class="ri-arrow-right-s-line"></i>
-            <span>Tours</span>
+            <span>${escapeHTML(t("detail.tours"))}</span>
             <i class="ri-arrow-right-s-line"></i>
             <span>${escapeHTML(tour.name)}</span>
           </nav>
@@ -249,24 +259,24 @@
             <span class="fact-chip"><i class="ri-time-line"></i> ${escapeHTML(tour.duration)}</span>
             <span class="fact-chip"><i class="ri-map-pin-2-line"></i> ${escapeHTML(tour.region)}</span>
             <span class="fact-chip"><i class="ri-star-fill"></i> ${tour.rating ?? "5.0"} (${(tour.reviews ?? 0).toLocaleString()})</span>
-            <span class="fact-chip"><i class="ri-user-smile-line"></i> ${escapeHTML(tour.bestFor || "All travellers")}</span>
+            <span class="fact-chip"><i class="ri-user-smile-line"></i> ${escapeHTML(tour.bestFor || "")}</span>
           </div>
         </div>
       </section>
 
       <div class="tour-body">
         <article class="tour-main">
-          <h2><i class="ri-information-line"></i> About this experience</h2>
+          <h2><i class="ri-information-line"></i> ${escapeHTML(t("detail.aboutExp"))}</h2>
           <p class="lead">${escapeHTML(tour.longDesc)}</p>
 
-          ${highlights ? `<h2><i class="ri-star-smile-line"></i> Highlights</h2><div class="highlights-grid">${highlights}</div>` : ""}
+          ${highlights ? `<h2><i class="ri-star-smile-line"></i> ${escapeHTML(t("detail.highlights"))}</h2><div class="highlights-grid">${highlights}</div>` : ""}
 
           ${galleryItems ? `
-          <h2><i class="ri-gallery-line"></i> Past Trips Gallery</h2>
-          <p class="mini-sub">Real moments captured by our travellers in ${escapeHTML(tour.name)}.</p>
+          <h2><i class="ri-gallery-line"></i> ${escapeHTML(t("detail.gallery"))}</h2>
+          <p class="mini-sub">${escapeHTML(t("detail.gallerySub").replace("{place}", tour.name))}</p>
           <button class="btn btn-primary gallery-toggle" data-count="${galleryCount}" aria-expanded="false" aria-controls="gallery-grid">
             <i class="ri-image-2-line"></i>
-            <span class="gt-label">View ${galleryCount} photos</span>
+            <span class="gt-label">${escapeHTML(viewPhotosLabel)}</span>
             <i class="ri-arrow-down-s-line gt-icon"></i>
           </button>
           <div class="gallery-collapse" id="gallery-grid">
@@ -275,17 +285,17 @@
             </div>
           </div>` : ""}
 
-          ${itinerary ? `<h2><i class="ri-route-line"></i> Itinerary</h2><div class="timeline">${itinerary}</div>` : ""}
+          ${itinerary ? `<h2><i class="ri-route-line"></i> ${escapeHTML(t("detail.itinerary"))}</h2><div class="timeline">${itinerary}</div>` : ""}
 
           ${(included || excluded) ? `
-          <h2><i class="ri-list-check-2"></i> Good to know</h2>
+          <h2><i class="ri-list-check-2"></i> ${escapeHTML(t("detail.goodToKnow"))}</h2>
           <div class="incl-excl">
             <div class="box incl">
-              <h4><i class="ri-checkbox-circle-line"></i> What's included</h4>
+              <h4><i class="ri-checkbox-circle-line"></i> ${escapeHTML(t("detail.included"))}</h4>
               <ul>${included}</ul>
             </div>
             <div class="box excl">
-              <h4><i class="ri-close-circle-line"></i> Not included</h4>
+              <h4><i class="ri-close-circle-line"></i> ${escapeHTML(t("detail.notIncluded"))}</h4>
               <ul>${excluded}</ul>
             </div>
           </div>` : ""}
@@ -294,26 +304,26 @@
         <aside class="tour-aside">
           <div class="booking-card">
             <div class="bc-top">
-              <div class="price">
-                <span class="amount">${money(tour.price)}</span>
-                <span class="unit">${escapeHTML(tour.priceUnit || "per person")}</span>
+              <div class="bc-heading">
+                <span class="bc-title">${escapeHTML(t("detail.bookThis"))}</span>
+                <span class="bc-subtitle">${escapeHTML(t("detail.bookThisSub"))}</span>
               </div>
             </div>
             <div class="bc-list">
-              <div class="bc-row"><i class="ri-time-line"></i><span><b>Duration</b>${escapeHTML(tour.duration)}</span></div>
-              <div class="bc-row"><i class="ri-group-line"></i><span><b>Group</b>Small groups · private option</span></div>
-              <div class="bc-row"><i class="ri-car-line"></i><span><b>Pickup</b>Hotel pick-up & drop-off</span></div>
-              <div class="bc-row"><i class="ri-user-voice-line"></i><span><b>Guide</b>Licensed Egyptologist</span></div>
-              <div class="bc-row"><i class="ri-shield-check-line"></i><span><b>Booking</b>Free reservation · pay later</span></div>
+              <div class="bc-row"><i class="ri-time-line"></i><span><b>${escapeHTML(t("detail.duration"))}</b>${escapeHTML(tour.duration)}</span></div>
+              <div class="bc-row"><i class="ri-group-line"></i><span><b>${escapeHTML(t("detail.group"))}</b>${escapeHTML(t("detail.groupVal"))}</span></div>
+              <div class="bc-row"><i class="ri-car-line"></i><span><b>${escapeHTML(t("detail.pickup"))}</b>${escapeHTML(t("detail.pickupVal"))}</span></div>
+              <div class="bc-row"><i class="ri-user-voice-line"></i><span><b>${escapeHTML(t("detail.guide"))}</b>${escapeHTML(t("detail.guideVal"))}</span></div>
+              <div class="bc-row"><i class="ri-shield-check-line"></i><span><b>${escapeHTML(t("detail.booking"))}</b>${escapeHTML(t("detail.bookingVal"))}</span></div>
             </div>
             <div class="bc-actions">
               <a class="btn btn-whatsapp" data-wa data-wa-msg="${escapeHTML(bookingMsg)}">
-                <i class="ri-whatsapp-line"></i> Book Now on WhatsApp
+                <i class="ri-whatsapp-line"></i> ${escapeHTML(t("detail.bookNow"))}
               </a>
-              <a class="btn btn-primary" data-wa data-wa-msg="Hi Zuzi Tours! I have a question about the ${tour.name} tour.">
-                <i class="ri-chat-3-line"></i> Ask a question
+              <a class="btn btn-primary" data-wa data-wa-msg="${escapeHTML(askMsg)}">
+                <i class="ri-chat-3-line"></i> ${escapeHTML(t("detail.askQuestion"))}
               </a>
-              <p class="trust"><i class="ri-shield-check-line"></i> No payment now · Confirm dates in chat</p>
+              <p class="trust"><i class="ri-shield-check-line"></i> ${escapeHTML(t("detail.trust"))}</p>
             </div>
           </div>
         </aside>
@@ -325,7 +335,7 @@
   function renderRelated(currentId) {
     const wrap = $("#related-tours");
     if (!wrap) return;
-    const related = TOURS.filter((t) => t.id !== currentId).slice(0, 3);
+    const related = TOURS.filter((tt) => tt.id !== currentId).slice(0, 3);
     if (!related.length) return;
     const grid = document.createElement("div");
     grid.className = "card-grid";
@@ -334,16 +344,16 @@
   }
 
   function renderNotFound(root) {
-    document.title = "Tour not found — Zuzi Tours";
+    document.title = t("notFound.title") + " — Zuzi Tours";
     root.innerHTML = `
       <section style="min-height:70vh;display:grid;place-items:center;text-align:center;padding:120px 24px;">
         <div>
           <div style="font-size:3rem;color:var(--color-brand-accent)"><i class="ri-compass-discover-line"></i></div>
-          <h1 style="font-family:var(--font-display);font-size:2.2rem;margin:12px 0;">We couldn't find that tour</h1>
+          <h1 style="font-family:var(--font-display);font-size:2.2rem;margin:12px 0;">${escapeHTML(t("notFound.title"))}</h1>
           <p style="color:var(--color-text-secondary);max-width:46ch;margin:0 auto 26px;">
-            The trip you're looking for may have moved. Browse all our Egyptian adventures instead.
+            ${escapeHTML(t("notFound.text"))}
           </p>
-          <a class="btn btn-primary" href="index.html#tours"><i class="ri-arrow-left-line"></i> Back to all tours</a>
+          <a class="btn btn-primary" href="index.html#tours"><i class="ri-arrow-left-line"></i> ${escapeHTML(t("notFound.btn"))}</a>
         </div>
       </section>`;
   }
@@ -427,7 +437,10 @@
         toggle.setAttribute("aria-expanded", String(isOpen));
         const count = toggle.getAttribute("data-count") || "";
         const label = toggle.querySelector(".gt-label");
-        if (label) label.textContent = isOpen ? "Hide photos" : `View ${count} photos`;
+        if (label)
+          label.textContent = isOpen
+            ? t("detail.hidePhotos")
+            : t("detail.viewPhotos").replace("{n}", count);
         if (isOpen) {
           setTimeout(
             () => collapse.scrollIntoView({ behavior: "smooth", block: "nearest" }),
@@ -442,14 +455,22 @@
       if (item) {
         const grid = item.closest(".gallery-grid");
         const imgs = Array.from(grid.querySelectorAll(".gallery-item img"));
-        const items = imgs.map((im) => ({
-          src: im.src,
-          caption: im.alt,
-        }));
+        const items = imgs.map((im) => ({ src: im.src, caption: im.alt }));
         openLightbox(items, imgs.indexOf(item));
       }
     });
   }
+
+  /* =====================================================
+     RENDER ALL (also used by language switching)
+     ===================================================== */
+  function renderAll() {
+    renderHomeCards();
+    renderDetail();
+    wireConfig();
+    if (window.zuziApplyTranslations) window.zuziApplyTranslations();
+  }
+  window.zuziRender = renderAll;
 
   /* =====================================================
      BOOT
@@ -459,9 +480,8 @@
     initHeader();
     initBackToTop();
     initGallery();
-    renderHomeCards();
-    renderDetail();
-    wireConfig(); // runs after render so dynamically-added links are wired too
+    if (window.zuziInitLangSwitch) window.zuziInitLangSwitch();
+    renderAll();
   }
 
   if (document.readyState === "loading") {
