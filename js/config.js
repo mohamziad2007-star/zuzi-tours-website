@@ -2,10 +2,10 @@ window.ZUZI_CONFIG = {
   brand: "Zuzi Tours",
   tagline: "Experience Egypt, not just a destination.",
 
-  whatsapp: "201000000000",
-  whatsappDisplay: "+20 100 000 0000",
+  whatsapp: "201022747727",
+  whatsappDisplay: "+20 10 22747727",
 
-  phone: "+20 100 000 0000",
+  phone: "+20 10 22747727",
   email: "hello@zuzitours.com",
 
   location: "Hurghada & Marsa Alam, Red Sea — Egypt",
