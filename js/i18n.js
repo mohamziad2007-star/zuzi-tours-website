@@ -357,7 +357,7 @@ window.ZUZI_I18N = {
         tagline: "Jediné místo na Zemi, kde se delfíni spojují s lidmi", bestFor: "Zážitek s delfíny",
         duration: "Celý den · cca 8 hod", durationShort: "8 hodin",
         cardDesc: "Věděli jste, že Sataya je víc než jen místo? Je to jediné místo na Zemi, kde mají delfíni tak blízký vztah s lidmi — vyhledávají je a hrají si s nimi každý den.",
-        longDesc: "Věděli jste, že Sataya je víc než jen místo? Zde jsou fakta a informace, které jsme objevili o tomto jedinečném místě. Je to také naše oblíbené místo na světě. Je to jediné místo na Zemi, kde mají delfíni tak blízký vztah s lidmi — vyhledávají je a hrají si s nimi každý den. Cena zahrnuje oběd na palubě, nápoje a auto.",
+        longDesc: "Věděli jste, že Sataya je víc než jen místo? Zde jsou fakta a informace, které jsem objevil o tomto jedinečném místě. Je to také moje oblíbené místo na světě. Je to jediné místo na Zemi, kde mají delfíni tak blízký vztah s lidmi. Vyhledávají je a hrají si s nimi každý den. Cena zahrnuje oběd na palubě, nápoje a auto.",
         highlights: ["Delfíni vyhledávají lidi každý den", "Opravdu jedinečné spojení", "Křišťálově čisté vody útesu", "Šnorchlování s divokými delfíny", "Oběd na palubě", "Doprava zahrnuta"],
         gallery: ["Rotující delfíni v laguně", "Plavání po boku delfínů", "Útes ze vzduchu", "Delfíni si hrají s návštěvníky"],
         itinerary: [
@@ -731,7 +731,7 @@ window.ZUZI_I18N = {
         tagline: "Jedyne miejsce na Ziemi, gdzie delfiny łączą się z ludźmi", bestFor: "Doświadczenie z delfinami",
         duration: "Cały dzień · ok. 8 godz", durationShort: "8 godzin",
         cardDesc: "Czy wiesz, że Sataya to więcej niż tylko miejsce? To jedyne miejsce na Ziemi, gdzie delfiny mają tak bliską relację z ludźmi — szukają ich i bawią się z nimi każdego dnia.",
-        longDesc: "Czy wiesz, że Sataya to więcej niż tylko miejsce? Oto fakty i informacje, które odkryliśmy o tym wyjątkowym miejscu. To także nasze ulubione miejsce na świecie. To jedyne miejsce na Ziemi, gdzie delfiny mają tak bliską relację z ludźmi — szukają ich i bawią się z nimi każdego dnia. Cena obejmuje lunch na pokładzie, napoje i samochód.",
+        longDesc: "Czy wiesz, że Sataya to więcej niż tylko miejsce? Oto fakty i informacje, które odkryłem o tym wyjątkowym miejscu. To także moje ulubione miejsce na świecie. To jedyne miejsce na Ziemi, gdzie delfiny mają tak bliską relację z ludźmi. Szukają ich i bawią się z nimi każdego dnia. Cena obejmuje lunch na pokładzie, napoje i samochód.",
         highlights: ["Delfiny szukają ludzi każdego dnia", "Naprawdę wyjątkowa więź", "Krystalicznie czyste wody rafy", "Snorkeling z dzikimi delfinami", "Lunch na pokładzie", "Transport wliczony"],
         gallery: ["Delfiny długoszcze w lagunie", "Pływanie obok delfinów", "Rafa z góry", "Delfiny bawiące się z gośćmi"],
         itinerary: [
@@ -1105,7 +1105,7 @@ window.ZUZI_I18N = {
         tagline: "المكان الوحيد على الأرض حيث تتواصل الدلافين مع البشر", bestFor: "تجربة مع الدلافين",
         duration: "يوم كامل · ~8 ساعات", durationShort: "8 ساعات",
         cardDesc: "هل تعلم أن ساتايا أكثر من مجرد مكان؟ إنه المكان الوحيد على الأرض حيث للدلافين علاقة وثيقة جداً بالبشر — تبحث عنهم وتلعب معهم كل يوم.",
-        longDesc: "هل تعلم أن ساتايا أكثر من مجرد مكان؟ إليك بعض الحقائق والمعلومات التي اكتشفناها عن هذا المكان الفريد. إنه أيضاً مكاننا المفضل في العالم. إنه المكان الوحيد على الأرض حيث للدلافين علاقة وثيقة جداً بالبشر — تبحث عنهم وتلعب معهم كل يوم. تشمل التكلفة الغداء على متن القارب والمشروبات والسيارة.",
+        longDesc: "هل تعلم أن ساتايا أكثر من مجرد مكان؟ إليك بعض الحقائق والمعلومات التي اكتشفتها عن هذا المكان الفريد. إنه أيضاً مكني المفضل في العالم. إنه المكان الوحيد على الأرض حيث للدلافين علاقة وثيقة جداً بالبشر. تبحث عنهم وتلعب معهم كل يوم. تشمل التكلفة الغداء على متن القارب والمشروبات والسيارة.",
         highlights: ["الدلافين تبحث عن البشر كل يوم", "تواصل فريد حقاً", "مياه الشعاب الصافية كالكريستال", "السباحة مع الدلافين البرية", "غداء على متن القارب", "نقل مشمول"],
         gallery: ["الدلافين الدوارة في البحيرة", "السباحة بجانب الدلافين", "الشعاب من الأعلى", "الدلافين تلعب مع الزوار"],
         itinerary: [

@@ -2,11 +2,10 @@ window.ZUZI_CONFIG = {
   brand: "Zuzi Tours",
   tagline: "Experience Egypt, not just a destination.",
 
-  whatsapp: "201022747727",
+  whatsapp: "201022747727", 
   whatsappDisplay: "+20 10 22747727",
 
   phone: "+20 10 22747727",
-  email: "hello@zuzitours.com",
 
   location: "Hurghada & Marsa Alam, Red Sea — Egypt",
   areasServed: [
@@ -23,8 +22,6 @@ window.ZUZI_CONFIG = {
   social: {
     instagram: "https://instagram.com/",
     facebook: "https://facebook.com/",
-    tiktok: "https://tiktok.com/",
-    tripadvisor: "https://tripadvisor.com/",
   },
 
   currency: "EGP",
