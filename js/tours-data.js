@@ -69,10 +69,10 @@
         { icon: "ri-camera-3-line", title: "Unbeatable photo opportunities" },
       ],
       gallery: [
-        { src: "assets/images/gallery/luxor-balloon/1.jpeg", caption: "In the basket with the pilot at dawn" },
-        { src: "assets/images/gallery/luxor-balloon/2.jpeg", caption: "A fleet of balloons over the West Bank" },
-        { src: "assets/images/gallery/luxor-balloon/3.png", caption: "Floating above the temples of Luxor" },
-        { src: "assets/images/gallery/luxor-balloon/4.jpg", caption: "Colourful balloons over the desert" },
+        { src: "assets/images/gallery/luxor-balloon/1.jpeg"},
+        { src: "assets/images/gallery/luxor-balloon/2.jpeg"},
+        { src: "assets/images/gallery/luxor-balloon/3.png"},
+        { src: "assets/images/gallery/luxor-balloon/4.jpg"},
       ],
       itinerary: [
         { time: "04:00", title: "Early pick-up", text: "Transfer from your Luxor hotel to the West Bank launch site." },
