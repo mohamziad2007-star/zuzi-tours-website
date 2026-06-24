@@ -245,8 +245,6 @@ window.ZUZI_TOURS = [
       { icon: "ri-star-smile-line", title: "Stargazing in the dunes" },
     ],
     gallery: [
-      { src: "assets/images/gallery/marsa-alam/1.jpeg"},
-      { src: "assets/images/gallery/marsa-alam/2.jpeg"},
       { src: "assets/images/gallery/marsa-alam/3.jpeg"},
       { src: "assets/images/gallery/marsa-alam/4.jpeg"},
       { src: "assets/images/gallery/marsa-alam/5.jpeg"},
@@ -475,7 +473,10 @@ window.ZUZI_TOURS = [
       { icon: "ri-shield-star-line", title: "Protected pristine waters" },
     ],
     gallery: [
-      { src: "assets/images/gallery/abu-dabbab/1.jpg"},
+      { src: "assets/images/gallery/abu-dabbab/1.jpeg"},
+      { src: "assets/images/gallery/abu-dabbab/2.jpeg"},
+      { src: "assets/images/gallery/abu-dabbab/3.jpeg"},
+      { src: "assets/images/gallery/abu-dabbab/4.jpeg"},
 
       
     ],
@@ -497,7 +498,7 @@ window.ZUZI_TOURS = [
     region: "Red Sea · Marsa Alam",
     icon: "ri-roadster-line",
     tagline: "Quad bikes, Bedouin traditions and desert sunsets",
-    image: "assets/images/marsa-safari.jpeg",
+    image: "assets/images/gallery/marsa-safari/2.jpeg",
     rating: 4.7,
     reviews: 731,
     duration: "Half day · ~5 hrs",
@@ -516,10 +517,10 @@ window.ZUZI_TOURS = [
       { icon: "ri-music-2-line", title: "Traditional dance performance" },
     ],
     gallery: [
-      { src: "assets/images/gallery/marsa-safari/1.jpeg", caption: "Quad biking across the desert dunes" },
-      { src: "assets/images/gallery/marsa-safari/2.jpg", caption: "Riding through the desert to the Bedouin tent" },
-      { src: "assets/images/gallery/marsa-safari/3.jpeg", caption: "Camel rides and sunset at the camp" },
-      { src: "assets/images/gallery/marsa-safari/4.jpg", caption: "Desert safari adventure in Marsa Alam" },
+      { src: "assets/images/gallery/marsa-safari/1.jpeg"},
+      { src: "assets/images/gallery/marsa-safari/2.jpeg"},
+      { src: "assets/images/gallery/marsa-safari/3.jpeg"},
+
     ],
     itinerary: [
       { time: "13:00", title: "Pick-up", text: "Transfer from your hotel to the quad base in the mountains." },
@@ -539,7 +540,7 @@ window.ZUZI_TOURS = [
     region: "Upper Egypt · Qena & Sohag",
     icon: "ri-ancient-gate-line",
     tagline: "Two of Egypt's most exquisitely decorated temples",
-    image: "assets/images/dendera-abydos.jpeg",
+    image: "assets/images/gallery/dendera-abydos/5.jpeg",
     rating: 4.9,
     reviews: 384,
     duration: "Full day · ~12 hrs",
@@ -558,10 +559,12 @@ window.ZUZI_TOURS = [
       { icon: "ri-sun-line", title: "Painted astronomical ceiling" },
     ],
     gallery: [
-      { src: "assets/images/gallery/dendera-abydos/1.jpg", caption: "Reliefs in the Temple of Osiris at Abydos" },
-      { src: "assets/images/gallery/dendera-abydos/2.jpg", caption: "Hieroglyphs on the walls of Dendera" },
-      { src: "assets/images/gallery/dendera-abydos/3.jpg", caption: "Ancient temple architecture" },
-      { src: "assets/images/gallery/dendera-abydos/4.jpg", caption: "The Osiris Temple at Abydos" },
+      { src: "assets/images/gallery/dendera-abydos/1.jpeg"},
+      { src: "assets/images/gallery/dendera-abydos/2.jpeg"},
+      { src: "assets/images/gallery/dendera-abydos/3.jpeg"},
+      { src: "assets/images/gallery/dendera-abydos/4.jpeg"},
+      { src: "assets/images/gallery/dendera-abydos/5.jpeg"},
+
     ],
     itinerary: [
       { time: "05:00", title: "Early pick-up", text: "Transfer from your Marsa Alam or Hurghada hotel." },
@@ -600,10 +603,19 @@ window.ZUZI_TOURS = [
       { icon: "ri-bubble-chart-line", title: "Coral reefs offshore" },
     ],
     gallery: [
-      { src: "assets/images/gallery/port-ghalib/1.jpg", caption: "The marina at Port Ghalib" },
-      { src: "assets/images/gallery/port-ghalib/2.jpg", caption: "Colourful promenade and waterfront" },
-      { src: "assets/images/gallery/port-ghalib/3.jpg", caption: "The resort town at golden hour" },
-      { src: "assets/images/gallery/port-ghalib/4.jpg", caption: "Port Ghalib marina on the Red Sea" },
+      { src: "assets/images/gallery/port-ghalib/1.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/2.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/3.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/4.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/5.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/6.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/7.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/8.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/9.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/10.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/11.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/12.jpeg"},
+
     ],
     itinerary: [
       { time: "09:00", title: "Pick-up", text: "Transfer from your Marsa Alam hotel to Port Ghalib." },
