@@ -119,7 +119,7 @@ window.ZUZI_TOURS = [
       { src: "assets/images/gallery/aswan/6.jpeg"},
       { src: "assets/images/gallery/aswan/7.jpeg"},
     ],
-    
+
     itinerary: [
       { time: "07:00", title: "Pick-up", text: "Meet your guide and head to the first site." },
       { time: "08:30", title: "Philae Temple", text: "Motorboat ride to the island temple of Isis." },
@@ -197,6 +197,7 @@ window.ZUZI_TOURS = [
       { icon: "ri-horse-line", title: "Optional camel ride" },
       { icon: "ri-building-4-line", title: "Grand Egyptian Museum add-on" },
     ],
+
     gallery: [
       { src: "assets/images/gallery/giza/1.jpeg"},
       { src: "assets/images/gallery/giza/2.jpeg"},
@@ -290,6 +291,7 @@ window.ZUZI_TOURS = [
       { icon: "ri-anchor-line", title: "Shore-entry diving" },
       { icon: "ri-shield-star-line", title: "Protected marine park" },
     ],
+
     gallery: [
       { src: "assets/images/gallery/marsa-mubarak/1.jpeg"},
       { src: "assets/images/gallery/marsa-mubarak/2.jpeg"},
@@ -299,6 +301,7 @@ window.ZUZI_TOURS = [
       { src: "assets/images/gallery/marsa-mubarak/6.jpeg"},
       { src: "assets/images/gallery/marsa-mubarak/7.jpeg"},
     ],
+
     itinerary: [
       { time: "08:00", title: "Pick-up", text: "Transfer from your Marsa Alam hotel to the bay." },
       { time: "09:00", title: "Snorkel briefing", text: "Kit-up and short briefing with your guide." },
@@ -335,6 +338,7 @@ window.ZUZI_TOURS = [
       { icon: "ri-user-smile-line", title: "Perfect for non-swimmers" },
       { icon: "ri-parent-line", title: "Family-friendly" },
     ],
+
     gallery: [
       { src: "assets/images/gallery/submarine/1.jpeg"},
       { src: "assets/images/gallery/submarine/2.jpeg"},
@@ -343,6 +347,7 @@ window.ZUZI_TOURS = [
       { src: "assets/images/gallery/submarine/5.jpeg"},
       { src: "assets/images/gallery/submarine/6.jpeg"},
     ],
+
     itinerary: [
       { time: "08:30", title: "Pick-up", text: "Transfer from your hotel to the marina in Marsa Alam or Hurghada." },
       { time: "09:30", title: "Boarding", text: "Board the submarine and safety briefing." },
@@ -380,10 +385,14 @@ window.ZUZI_TOURS = [
       { icon: "ri-restaurant-line", title: "Snorkelling & swimming" },
     ],
     gallery: [
-      { src: "assets/images/gallery/sharm-el-luli/1.jpg", caption: "The white-sand arc of Hankorab" },
-      { src: "assets/images/gallery/sharm-el-luli/2.jpg", caption: "Turquoise lagoon at Sharm El Luli" },
-      { src: "assets/images/gallery/sharm-el-luli/3.jpg", caption: "Snorkelling the untouched house reef" },
-      { src: "assets/images/gallery/sharm-el-luli/4.jpg", caption: "Relaxing on one of the world's best beaches" },
+      { src: "assets/images/gallery/sharm-el-luli/1.jpeg"},
+      { src: "assets/images/gallery/sharm-el-luli/2.jpeg"},
+      { src: "assets/images/gallery/sharm-el-luli/3.jpeg"},
+      { src: "assets/images/gallery/sharm-el-luli/4.jpeg"},
+      { src: "assets/images/gallery/sharm-el-luli/5.jpeg"},
+      { src: "assets/images/gallery/sharm-el-luli/6.jpeg"},
+      { src: "assets/images/gallery/sharm-el-luli/7.jpeg"},
+
     ],
     itinerary: [
       { time: "08:00", title: "Pick-up", text: "Transfer from your Marsa Alam hotel to Wadi El Gemal." },
@@ -403,7 +412,7 @@ window.ZUZI_TOURS = [
     region: "Red Sea · Hurghada",
     icon: "ri-speed-line",
     tagline: "Dolphins, Orange Island and a fast-boat adventure",
-    image: "assets/images/orange-island.jpg",
+    image: "assets/images/gallery/orange-island/1.jpeg",
     rating: 4.7,
     reviews: 933,
     duration: "Half day · ~4 hrs",
@@ -422,10 +431,11 @@ window.ZUZI_TOURS = [
       { icon: "ri-parent-line", title: "Family-friendly pace" },
     ],
     gallery: [
-      { src: "assets/images/gallery/orange-island/1.jpg", caption: "Speedboat headed for the dolphins" },
-      { src: "assets/images/gallery/orange-island/2.jpg", caption: "Snorkelling alongside wild dolphins" },
-      { src: "assets/images/gallery/orange-island/3.jpg", caption: "White sands of Orange Island" },
-      { src: "assets/images/gallery/orange-island/4.jpg", caption: "Island-hopping along the coast" },
+      { src: "assets/images/gallery/orange-island/1.jpeg"},
+      { src: "assets/images/gallery/orange-island/2.jpeg"},
+      { src: "assets/images/gallery/orange-island/3.jpeg"},
+      { src: "assets/images/gallery/orange-island/4.jpeg"},
+
     ],
     itinerary: [
       { time: "08:30", title: "Pick-up & departure", text: "Hotel transfer and speed-boat departure from the marina." },
@@ -465,10 +475,9 @@ window.ZUZI_TOURS = [
       { icon: "ri-shield-star-line", title: "Protected pristine waters" },
     ],
     gallery: [
-      { src: "assets/images/gallery/abu-dabbab/1.jpg", caption: "Snorkelling the clear waters of Abu Dabbab" },
-      { src: "assets/images/gallery/abu-dabbab/2.jpg", caption: "Sea turtles over the seagrass" },
-      { src: "assets/images/gallery/abu-dabbab/3.jpeg", caption: "The sandy shore of Abu Dabbab" },
-      { src: "assets/images/gallery/abu-dabbab/4.jpg", caption: "Snorkelling with turtles and dugongs" },
+      { src: "assets/images/gallery/abu-dabbab/1.jpg"},
+
+      
     ],
     itinerary: [
       { time: "08:00", title: "Pick-up", text: "Transfer from your Marsa Alam hotel to Abu Dabbab beach." },
