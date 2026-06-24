@@ -1,13 +1,3 @@
-/* ============================================================
-   ZUZI TOURS — Tour catalogue (data layer)
-   ------------------------------------------------------------
-   Add a new tour = add one object to this array and it will
-   automatically appear on the home grid and get its own detail
-   page at  tour.html?id=<id>   — no extra HTML needed.
-
-   NOTE: Prices/durations below are editable placeholders in EGP.
-   ============================================================ */
-
 window.ZUZI_TOURS = [
   {
     id: "luxor",
@@ -36,10 +26,17 @@ window.ZUZI_TOURS = [
       { icon: "ri-ship-line", title: "Nile felucca sail" },
     ],
     gallery: [
-      { src: "assets/images/gallery/luxor/1.webp", caption: "Temple of Hatshepsut on the West Bank" },
-      { src: "assets/images/gallery/luxor/2.jpg", caption: "Obelisk of Hatshepsut at Karnak" },
-      { src: "assets/images/gallery/luxor/3.jpg", caption: "The great hypostyle hall of Karnak" },
-      { src: "assets/images/gallery/luxor/4.jpg", caption: "Approaching the Valley of the Kings" },
+      { src: "assets/images/gallery/luxor/1.jpeg"},
+      { src: "assets/images/gallery/luxor/2.jpeg"},
+      { src: "assets/images/gallery/luxor/3.jpeg"},
+      { src: "assets/images/gallery/luxor/4.jpeg"},
+      { src: "assets/images/gallery/luxor/5.jpeg"},
+      { src: "assets/images/gallery/luxor/6.jpeg"},
+      { src: "assets/images/gallery/luxor/7.jpeg"},
+      { src: "assets/images/gallery/luxor/8.jpeg"},
+      { src: "assets/images/gallery/luxor/9.jpeg"},
+      { src: "assets/images/gallery/luxor/10.jpeg"},
+
     ],
     itinerary: [
       { time: "05:30", title: "Pick-up & departure", text: "Air-conditioned transfer from your hotel, with breakfast on the go." },
@@ -59,7 +56,7 @@ window.ZUZI_TOURS = [
     region: "Upper Egypt · Nubia",
     icon: "ri-ship-line",
     tagline: "Where the Nile is at its most beautiful",
-    image: "assets/images/aswan.jpg",
+    image: "assets/images/aswan.jpeg",
     rating: 4.8,
     reviews: 642,
     duration: "Full day · ~10 hrs",
@@ -81,9 +78,9 @@ window.ZUZI_TOURS = [
     ],
     gallery: [
       { src: "assets/images/gallery/aswan/1.webp", caption: "Philae Temple on its island" },
-      { src: "assets/images/gallery/aswan/2.jpg", caption: "Boarding a traditional felucca" },
-      { src: "assets/images/gallery/aswan/3.jpg", caption: "A peaceful felucca sail on the Nile" },
-      { src: "assets/images/gallery/aswan/4.jpg", caption: "Boats drifting on the Nile at Aswan" },
+      { src: "assets/images/gallery/aswan/2.jpeg", caption: "Boarding a traditional felucca" },
+      { src: "assets/images/gallery/aswan/3.jpeg", caption: "A peaceful felucca sail on the Nile" },
+      { src: "assets/images/gallery/aswan/4.jpeg", caption: "Boats drifting on the Nile at Aswan" },
     ],
     itinerary: [
       { time: "07:00", title: "Pick-up", text: "Meet your guide and head to the first site." },
@@ -103,7 +100,7 @@ window.ZUZI_TOURS = [
     region: "Upper Egypt · Lake Nasser",
     icon: "ri-statue-line",
     tagline: "The twin temples of Ramses the Great",
-    image: "assets/images/abu-simbel.jpg",
+    image: "assets/images/abu-simbel.jpeg",
     rating: 4.9,
     reviews: 511,
     duration: "Full day · ~9 hrs",
@@ -124,9 +121,9 @@ window.ZUZI_TOURS = [
       { icon: "ri-ancient-pavilion-line", title: "Battle of Kadesh reliefs" },
     ],
     gallery: [
-      { src: "assets/images/gallery/abu-simbel/1.jpg", caption: "Aerial view of the temple complex" },
+      { src: "assets/images/gallery/abu-simbel/1.jpeg", caption: "Aerial view of the temple complex" },
       { src: "assets/images/gallery/abu-simbel/2.webp", caption: "The colossi at sunset over Lake Nasser" },
-      { src: "assets/images/gallery/abu-simbel/3.jpg", caption: "Cruising toward Abu Simbel on Lake Nasser" },
+      { src: "assets/images/gallery/abu-simbel/3.jpeg", caption: "Cruising toward Abu Simbel on Lake Nasser" },
       { src: "assets/images/gallery/abu-simbel/4.webp", caption: "Detail of the Temple of Nefertari" },
     ],
     itinerary: [
@@ -147,7 +144,7 @@ window.ZUZI_TOURS = [
     region: "Greater Cairo",
     icon: "ri-ancient-pyramid-line",
     tagline: "The last surviving wonder of the ancient world",
-    image: "assets/images/giza.jpg",
+    image: "assets/images/giza.jpeg",
     rating: 5.0,
     reviews: 2317,
     duration: "Half day · ~5 hrs",
@@ -168,10 +165,10 @@ window.ZUZI_TOURS = [
       { icon: "ri-building-4-line", title: "Grand Egyptian Museum add-on" },
     ],
     gallery: [
-      { src: "assets/images/gallery/giza/1.jpg", caption: "Camel ride across the Giza Plateau" },
-      { src: "assets/images/gallery/giza/2.jpg", caption: "Riding between the pyramids" },
-      { src: "assets/images/gallery/giza/3.jpg", caption: "Standing beside the Great Pyramid" },
-      { src: "assets/images/gallery/giza/4.jpg", caption: "The Great Sphinx and the pyramids" },
+      { src: "assets/images/gallery/giza/1.jpeg", caption: "Camel ride across the Giza Plateau" },
+      { src: "assets/images/gallery/giza/2.jpeg", caption: "Riding between the pyramids" },
+      { src: "assets/images/gallery/giza/3.jpeg", caption: "Standing beside the Great Pyramid" },
+      { src: "assets/images/gallery/giza/4.jpeg", caption: "The Great Sphinx and the pyramids" },
     ],
     itinerary: [
       { time: "08:00", title: "Pick-up", text: "Transfer from your Cairo/Giza hotel." },
@@ -245,7 +242,7 @@ window.ZUZI_TOURS = [
     cardDesc:
       "Cruise to the protected island of Giftun, snorkel crystal lagoons and explore the colourful reefs of the Red Sea Riviera.",
     longDesc:
-      "Hurghada is the lively heart of the Red Sea Riviera, and this tour is its greatest hits. Sail to Giftun Island for white-sand beaches and protected lagoons, snorkel above teeming coral gardens, and choose from optional add-ons like a semi-submarine reef tour, parasailing or a lively evening at the Marina. A relaxed, family-friendly day on the water with everything handled.",
+      "Your adventure from Hurghada with the most wonderful speed trips includes a 4-hour trip: 2 hours of snorkeling with dolphin watching, 2 hours on Orange Island, fruit, drinks, and transportation to and from your hotel. If you eat or drink anything on Orange Island, that's at your own expense. Don't miss this trip! Book now.",
     highlights: [
       { icon: "ri-island-line", title: "Giftun Island" },
       { icon: "ri-water-flash-line", title: "Coral lagoon snorkelling" },
@@ -255,10 +252,13 @@ window.ZUZI_TOURS = [
       { icon: "ri-anchor-line", title: "Hurghada Marina" },
     ],
     gallery: [
-      { src: "assets/images/gallery/hurghada/1.jpg", caption: "Orange Bay on Giftun Island" },
-      { src: "assets/images/gallery/hurghada/2.jpg", caption: "Giftun Island National Park" },
-      { src: "assets/images/gallery/hurghada/3.jpg", caption: "Snorkelling at Orange Bay" },
-      { src: "assets/images/gallery/hurghada/4.jpg", caption: "Reef snorkelling on the trip" },
+      { src: "assets/images/gallery/hurghada/1.jpeg"},
+      { src: "assets/images/gallery/hurghada/2.jpeg"},
+      { src: "assets/images/gallery/hurghada/3.jpeg" },
+      { src: "assets/images/gallery/hurghada/4.jpeg"},
+      { src: "assets/images/gallery/hurghada/5.jpeg"},
+      { src: "assets/images/gallery/hurghada/6.jpeg"},
+
     ],
     itinerary: [
       { time: "08:30", title: "Boarding", text: "Pick-up and departure from the Hurghada marina." },
