@@ -14,7 +14,7 @@
       cardDesc:
         "Walk among the colossal columns of Karnak and descend into the royal tombs of the Valley of the Kings on the East and West Banks.",
       longDesc:
-        "Our adventure begins in Marsa Alam or Hurghada with a trip to Luxor, including a one-night stay in one of its hotels. If you'd like to experience a two-day hot air balloon ride, on the first day you'll visit Karnak Temple, the Temple of Hatshepsut, and the Valley of the Kings, cross the Nile by small boat, and have lunch. On the second day, at dawn, you'll enjoy a hot air balloon ride, which concludes around 8:00 AM, after which you'll return to the hotel. The trip includes a one-day tour guide, drinks, and transportation. Book your trip now!",
+        "Our adventure begins in Marsa Alam or Hurghada. Join us on a special trip to Luxor! We'll visit Karnak Temple, the Temple of Hatshepsut, and the Valley of the Kings. The trip includes lunch, drinks, a tour guide, and a car. Book now!",
       highlights: [
         { icon: "ri-ancient-gate-line", title: "Karnak Temple Complex" },
         { icon: "ri-building-2-line", title: "Luxor Temple by night" },
@@ -59,7 +59,7 @@
       cardDesc:
         "Glide above Luxor at sunrise in a hot air balloon, watching the Nile, the Valley of the Kings and ancient temples unfold beneath you.",
       longDesc:
-        "There is no view in Egypt quite like the one from a hot air balloon at dawn over Luxor. Long before the crowds arrive, you rise into a sky full of colour as the sun spills gold across the Nile, the green farmland of the West Bank and the desert mountains beyond. From your basket you can trace the full sweep of ancient Thebes — the Valley of the Kings, the Temple of Hatshepsut, the Colossi of Memnon and the Ramesseum — all laid out like a map below you. The flight lasts roughly 45 minutes and is operated by fully licensed pilots with an impeccable safety record, making it a serene, once-in-a-lifetime experience for couples, families and first-time flyers alike.",
+        "Our adventure begins in Marsa Alam or Hurghada with a trip to Luxor, including a one-night stay in one of its hotels. If you'd like to experience a two-day hot air balloon ride, on the first day you'll visit Karnak Temple, the Temple of Hatshepsut, and the Valley of the Kings, cross the Nile by small boat, and have lunch. On the second day, at dawn, you'll enjoy a hot air balloon ride, which concludes around 8:00 AM, after which you'll return to the hotel. The trip includes a one-day tour guide, drinks, and transportation. Book your trip now!",
       highlights: [
         { icon: "ri-sun-line", title: "Sunrise over the Nile" },
         { icon: "ri-windy-line", title: "45-minute balloon flight" },

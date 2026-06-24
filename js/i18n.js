@@ -149,7 +149,7 @@ window.ZUZI_I18N = {
         tagline: "Největší muzeum pod širým nebem na světě", bestFor: "Historie a archeologie",
         duration: "Celý den · cca 12 hod", durationShort: "12 hodin",
         cardDesc: "Procházejte se mezi kolosálními sloupy Karnaku a sestupte do královských hrobek Údolí králů na východním i západním břehu.",
-        longDesc: "Naše dobrodružství začíná v Marsa Alam nebo Hurgádě výletem do Luxoru, včetně jedné noci v jednom z místních hotelů. Pokud chcete zažít jízdu horkovzdušným balónem, první den navštívíte chrám Karnak, chrám Hatšepsut a Údolí králů, přejedete Nil malou lodí a budete mít oběd. Druhý den při úsvitu si užijete balónový let, který končí kolem 8:00, po němž se vrátíte do hotelu. Výlet zahrnuje průvodce na jeden den, nápoje a dopravu. Rezervujte si svůj výlet ještě dnes!",
+        longDesc: "Naše dobrodružství začíná v Marsa Alam nebo Hurghadě. Přidejte se k nám na speciální výlet do Luxoru! Navštívíme chrám v Karnaku, chrám Hatšepsut a Údolí králů. Výlet zahrnuje oběd, nápoje, průvodce a auto. Rezervujte nyní!",
         highlights: ["Komplex chrámu Karnak", "Chrám v Luxoru v noci", "Údolí králů", "Chrám Hatšepsut", "Kolosy Memnonovy", "Plavba na nilské feluce"],
         gallery: ["Chrám Hatšepsut na západním břehu", "Obelisk Hatšepsut v Karnaku", "Velká hypostylová hala Karnaku", "Cesta k Údolí králů"],
         itinerary: [
@@ -168,7 +168,7 @@ window.ZUZI_I18N = {
         tagline: "Východ slunce nad největším muzeem pod širým nebem", bestFor: "Nezapomenutelné výhledy",
         duration: "Ráno · cca 2 hod", durationShort: "2 hodiny",
         cardDesc: "Klouzněte nad Luxorem za východu slunce v horkovzdušném balónu a sledujte, jak se pod vámi rozprostírá Nil, Údolí králů a starověké chrámy.",
-        longDesc: "V Egyptě není výhled jako ten z horkovzdušného balónu za úsvitu nad Luxorem. Dávno předtím, než dorazí davy, vzlétáte do nebe plného barev, zatímco slunce rozlévá zlato po Nilu, zelených polích západního břehu a pouštních horách v dáli. Z koše můžete vysledovat celý rozmach starověkých Théb — Údolí králů, chrám Hatšepsut, Kolosy Memnonovy a Ramesseum — vše rozložené jako mapa pod vámi. Let trvá zhruba 45 minut a provádějí ho plně licencovaní piloti s bezchybnou bezpečnostní historií, takže je to klidný, jedinečný zážitek pro páry, rodiny i první létající.",
+        longDesc: "Naše dobrodružství začíná v Marsa Alam nebo Hurghadě výletem do Luxoru, včetně jednodenního pobytu v jednom z hotelů. Pokud byste si chtěli vyzkoušet dvoudenní let horkovzdušným balónem, první den navštívíte chrám v Karnaku, chrám Hatšepsut a Údolí králů, přejedete Nil na malé lodi a dáte si oběd. Druhý den, za úsvitu, si užijete let horkovzdušným balónem, který končí kolem 8:00, po kterém se vrátíte do hotelu. Výlet zahrnuje jednodenní průvodce, nápoje a dopravu. Rezervujte si zájezd hned teď.",
         highlights: ["Východ slunce nad Nilem", "45minutový balónový let", "Údolí králů ze vzduchu", "Pohled z ptačí perspektivy na chrám Hatšepsut", "Licencovaní piloti a bezpečnost", "Bezkonkurenční příležitosti pro fotky"],
         gallery: ["V koši s pilotem za úsvitu", "Flotila balónů nad západním břehem", "Vznášení se nad chrámy Luxoru", "Barevné balóny nad pouští"],
         itinerary: [
@@ -523,7 +523,7 @@ window.ZUZI_I18N = {
         tagline: "Największe na świecie muzeum pod gołym niebem", bestFor: "Historia i archeologia",
         duration: "Cały dzień · ok. 12 godz", durationShort: "12 godzin",
         cardDesc: "Przechadzaj się wśród kolosalnych kolumn Karnaku i zejdź do królewskich grobowców Doliny Królów na Wschodnim i Zachodnim Brzegu.",
-        longDesc: "Nasza przygoda zaczyna się w Marsa Alam lub Hurghadzie, skąd wyruszamy do Luksoru, w tym z noclegiem w jednym z lokalnych hoteli. Jeśli chcesz doświadczyć lotu balonem na gorące powietrze, pierwszego dnia odwiedzisz świątynię Karnak, świątynię Hatszepsut i Dolinę Królów, przeprawisz się przez Nil małą łodzią i zjesz lunch. Drugiego dnia o świcie czeka Cię lot balonem, który kończy się około 8:00, po którym wrócisz do hotelu. Wycieczka obejmuje przewodnika na jeden dzień, napoje i transport. Zarezerwuj swoją podróż już dziś!",
+        longDesc: "Nasza przygoda rozpoczyna się w Marsa Alam lub Hurghadzie. Dołącz do nas w wyjątkowej wycieczce do Luksoru! Odwiedzimy świątynię Karnak, świątynię Hatszepsut i Dolinę Królów. W cenę wycieczki wliczony jest lunch, napoje, przewodnik i samochód. Zarezerwuj teraz!",
         highlights: ["Kompleks świątyni Karnak", "Świątynia w Luksorze nocą", "Dolina Królów", "Świątynia Hatszepsut", "Kolosy Memnona", "Rejs feluką po Nilu"],
         gallery: ["Świątynia Hatszepsut na Zachodnim Brzegu", "Obelisk Hatszepsut w Karnaku", "Wielka sala hipostylowa Karnaku", "Droga do Doliny Królów"],
         itinerary: [
@@ -542,7 +542,7 @@ window.ZUZI_I18N = {
         tagline: "Wschód słońca nad największym muzeum pod gołym niebem", bestFor: "Niezapomniane widoki",
         duration: "Rano · ok. 2 godz", durationShort: "2 godziny",
         cardDesc: "Unieś się nad Luksorem o wschodzie słońca w balonie na gorące powietrze i obserwuj, jak pod Tobą rozpościera się Nil, Dolina Królów i starożytne świątynie.",
-        longDesc: "W Egipcie nie ma widoku równego temu z balonu na gorące powietrze o świcie nad Luksorem. Na długo przed nadejściem tłumów wznosisz się w niebo pełne kolorów, gdy słońce rozlewa złoto nad Nilem, zielonymi polami Zachodniego Brzegu i pustynnymi górami w oddali. Z kosza możesz prześledzić pełen zasięg starożytnych Teb — Dolinę Królów, świątynię Hatszepsut, Kolosy Memnona i Ramesseum — wszystko rozłożone jak mapa pod Tobą. Lot trwa około 45 minut i jest prowadzony przez w pełni licencjonowanych pilotów z nieskazitelnym rekordem bezpieczeństwa, co czyni go spokojnym, niepowtarzalnym doświadczeniem dla par, rodzin i osób latających po raz pierwszy.",
+        longDesc: "Nasza przygoda rozpoczyna się w Marsa Alam lub Hurghadzie od wycieczki do Luksoru, obejmującej jednodniowy pobyt w jednym z tamtejszych hoteli. Jeśli chcesz przeżyć dwudniowy lot balonem, pierwszego dnia odwiedzisz świątynię Karnak, świątynię Hatszepsut i Dolinę Królów, przepłyniesz Nil małą łodzią i zjesz lunch. Drugiego dnia, o świcie, odbędzie się lot balonem, który zakończy się około 8:00 rano, po czym wrócisz do hotelu. Wycieczka obejmuje jednodniową opiekę przewodnika, napoje i transport. Zarezerwuj swoją podróż już teraz.",
         highlights: ["Wschód słońca nad Nilem", "45-minutowy lot balonem", "Dolina Królów z lotu ptaka", "Widok z powietrza na świątynię Hatszepsut", "Licencjonowani piloci i bezpieczeństwo", "Niesamowite okazje do zdjęć"],
         gallery: ["W koszu z pilotem o świcie", "Flota balonów nad Zachodnim Brzegiem", "Unoszenie się nad świątyniami Luksoru", "Kolorowe balony nad pustynią"],
         itinerary: [
@@ -897,7 +897,7 @@ window.ZUZI_I18N = {
         tagline: "أكبر متحف مفتوح في العالم", bestFor: "التاريخ والآثار",
         duration: "يوم كامل · ~12 ساعة", durationShort: "12 ساعة",
         cardDesc: "تجوّل بين الأعمدة الضخمة في الكرنك وانزل إلى المقابر الملكية في وادي الملوك على الضفتين الشرقية والغربية.",
-        longDesc: "تبدأ مغامرتنا في مرسى علم أو الغردقة برحلة إلى الأقصر، تشمل إقامة ليلة واحدة في أحد فنادقها. إذا رغبتم بتجربة رحلة منطاد لمدة يومين، ففي اليوم الأول ستزورون معبد الكرنك، ومعبد حتشبسوت، ووادي الملوك، وتعبرون النيل بقارب صغير، وتتناولون الغداء. في اليوم الثاني، عند الفجر، ستستمتعون برحلة منطاد تنتهي حوالي الساعة 8:00 صباحًا، وبعدها ستعودون إلى الفندق. تشمل الرحلة مرشدًا سياحيًا ليوم واحد، والمشروبات، والمواصلات. احجزوا رحلتكم الآن.",
+        longDesc: "تبدأ مغامرتنا في مرسى علم أو الغردقة. انضموا إلينا في رحلة مميزة إلى الأقصر! سنزور معبد الكرنك، ومعبد حتشبسوت، ووادي الملوك. تشمل الرحلة الغداء والمشروبات ومرشدًا سياحيًا وسيارة. احجزوا الآن",
         highlights: ["مجمّع معبد الكرنك", "معبد الأقصر ليلاً", "وادي الملوك", "معبد حتشبسوت", "تمثالا ممنون", "رحلة بالفلوكة على النيل"],
         gallery: ["معبد حتشبسوت على الضفة الغربية", "مسلة حتشبسوت في الكرنك", "قاعة الأعمدة الكبرى في الكرنك", "الطريق نحو وادي الملوك"],
         itinerary: [
@@ -916,7 +916,7 @@ window.ZUZI_I18N = {
         tagline: "شروق الشمس فوق أكبر متحف مفتوح في العالم", bestFor: "إطلالات لا تُنسى",
         duration: "صباحاً · ~ ساعتان", durationShort: "ساعتان",
         cardDesc: "انطلق فوق الأقصر عند شروق الشمس في بالون حراري، وراقب النيل ووادي الملوك والمعابد القديمة تتمدد تحتك.",
-        longDesc: "لا يوجد منظر في مصر يضاهي ما تراه من بالون حراري عند الفجر فوق الأقصر. قبل وقت طويل من وصول الزحام، ترتفع في سماء مليئة بالألوان بينما تنسكب الشمس ذهباً على النيل والمزارع الخضراء على الضفة الغربية والجبال الصحراوية البعيدة. من سلتك يمكنك تتبع امتداد طيبة القديمة بالكامل — وادي الملوك، ومعبد حتشبسوت، وتمثالي ممنون، والرامسيوم — كلها منبسطة كخريطة تحتك. تستمر الرحلة نحو 45 دقيقة ويقودها طيارون مرخّصون بالكامل بسجل سلامة لا تشوبه شائبة، مما يجعلها تجربة هادئة ومرة واحدة في العمر للأزواج والعائلات وللمبتدئين في الطيران على حد سواء.",
+        longDesc: "تبدأ مغامرتنا في مرسى علم أو الغردقة برحلة إلى الأقصر، تشمل إقامة ليلة واحدة في أحد فنادقها. إذا رغبتم بتجربة رحلة منطاد لمدة يومين، ففي اليوم الأول ستزورون معبد الكرنك، ومعبد حتشبسوت، ووادي الملوك، وتعبرون النيل بقارب صغير، وتتناولون الغداء. في اليوم الثاني، عند الفجر، ستستمتعون برحلة منطاد تنتهي حوالي الساعة 8:00 صباحًا، وبعدها ستعودون إلى الفندق. تشمل الرحلة مرشدًا سياحيًا ليوم واحد، والمشروبات، والمواصلات. احجزوا رحلتكم الآن.",
         highlights: ["شروق الشمس فوق النيل", "رحلة بالون مدتها 45 دقيقة", "وادي الملوك من الأعلى", "إطلالة جوية لمعبد حتشبسوت", "طيارون مرخّصون وسجل سلامة", "فرص تصوير لا تُضاهى"],
         gallery: ["في السلة مع الطيار عند الفجر", "أسطول من البالونات فوق الضفة الغربية", "التحليق فوق معابد الأقصر", "بالونات ملوّنة فوق الصحراء"],
         itinerary: [
