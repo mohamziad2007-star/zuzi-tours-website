@@ -5,7 +5,7 @@ window.ZUZI_TOURS = [
     region: "Upper Egypt · Nile",
     icon: "ri-ancient-gate-line",
     tagline: "The world's greatest open-air museum",
-    image: "assets/images/luxor.jpg",
+    image: "assets/images/gallery/luxor/1.jpeg",
     rating: 4.9,
     reviews: 1284,
     duration: "Full day · ~12 hrs",
@@ -24,10 +24,13 @@ window.ZUZI_TOURS = [
       { icon: "ri-ship-line", title: "Nile felucca sail" },
     ],
     gallery: [
-      { src: "assets/images/gallery/luxor/1.webp", caption: "Temple of Hatshepsut on the West Bank" },
-      { src: "assets/images/gallery/luxor/2.jpg", caption: "Obelisk of Hatshepsut at Karnak" },
-      { src: "assets/images/gallery/luxor/3.jpg", caption: "The great hypostyle hall of Karnak" },
-      { src: "assets/images/gallery/luxor/4.jpg", caption: "Approaching the Valley of the Kings" },
+      { src: "assets/images/gallery/luxor/1.jpeg"},
+      { src: "assets/images/gallery/luxor/2.jpeg"},
+      { src: "assets/images/gallery/luxor/3.jpeg"},
+      { src: "assets/images/gallery/luxor/4.jpeg"},
+      { src: "assets/images/gallery/luxor/5.jpeg"},
+      { src: "assets/images/gallery/luxor/6.jpeg"},
+      { src: "assets/images/gallery/luxor/7.jpeg"},
     ],
     itinerary: [
       { time: "05:30", title: "Pick-up & departure", text: "Air-conditioned transfer from your hotel, with breakfast on the go." },
@@ -66,8 +69,8 @@ window.ZUZI_TOURS = [
       { icon: "ri-camera-3-line", title: "Unbeatable photo opportunities" },
     ],
     gallery: [
-      { src: "assets/images/gallery/luxor-balloon/1.jpg", caption: "In the basket with the pilot at dawn" },
-      { src: "assets/images/gallery/luxor-balloon/2.jpg", caption: "A fleet of balloons over the West Bank" },
+      { src: "assets/images/gallery/luxor-balloon/1.jpeg", caption: "In the basket with the pilot at dawn" },
+      { src: "assets/images/gallery/luxor-balloon/2.jpeg", caption: "A fleet of balloons over the West Bank" },
       { src: "assets/images/gallery/luxor-balloon/3.png", caption: "Floating above the temples of Luxor" },
       { src: "assets/images/gallery/luxor-balloon/4.jpg", caption: "Colourful balloons over the desert" },
     ],
@@ -108,11 +111,15 @@ window.ZUZI_TOURS = [
       { icon: "ri-store-2-line", title: "Nubian village visit" },
     ],
     gallery: [
-      { src: "assets/images/gallery/aswan/1.webp", caption: "Philae Temple on its island" },
-      { src: "assets/images/gallery/aswan/2.jpg", caption: "Boarding a traditional felucca" },
-      { src: "assets/images/gallery/aswan/3.jpg", caption: "A peaceful felucca sail on the Nile" },
-      { src: "assets/images/gallery/aswan/4.jpg", caption: "Boats drifting on the Nile at Aswan" },
+      { src: "assets/images/gallery/aswan/1.jpeg"},
+      { src: "assets/images/gallery/aswan/2.jpeg"},
+      { src: "assets/images/gallery/aswan/3.jpeg"},
+      { src: "assets/images/gallery/aswan/4.jpeg"},
+      { src: "assets/images/gallery/aswan/5.jpeg"},
+      { src: "assets/images/gallery/aswan/6.jpeg"},
+      { src: "assets/images/gallery/aswan/7.jpeg"},
     ],
+
     itinerary: [
       { time: "07:00", title: "Pick-up", text: "Meet your guide and head to the first site." },
       { time: "08:30", title: "Philae Temple", text: "Motorboat ride to the island temple of Isis." },
@@ -150,10 +157,9 @@ window.ZUZI_TOURS = [
       { icon: "ri-ancient-pavilion-line", title: "Battle of Kadesh reliefs" },
     ],
     gallery: [
-      { src: "assets/images/gallery/abu-simbel/1.jpg", caption: "Aerial view of the temple complex" },
-      { src: "assets/images/gallery/abu-simbel/2.webp", caption: "The colossi at sunset over Lake Nasser" },
-      { src: "assets/images/gallery/abu-simbel/3.jpg", caption: "Cruising toward Abu Simbel on Lake Nasser" },
-      { src: "assets/images/gallery/abu-simbel/4.webp", caption: "Detail of the Temple of Nefertari" },
+      { src: "assets/images/gallery/abu-simbel/1.jpg"},
+      { src: "assets/images/gallery/abu-simbel/3.jpeg"},
+      { src: "assets/images/gallery/abu-simbel/4.jpeg"},
     ],
     itinerary: [
       { time: "04:30", title: "Early departure", text: "Road transfer across the desert (convoy safety) — or optional flight." },
@@ -191,11 +197,17 @@ window.ZUZI_TOURS = [
       { icon: "ri-horse-line", title: "Optional camel ride" },
       { icon: "ri-building-4-line", title: "Grand Egyptian Museum add-on" },
     ],
+
     gallery: [
-      { src: "assets/images/gallery/giza/1.jpg", caption: "Camel ride across the Giza Plateau" },
-      { src: "assets/images/gallery/giza/2.jpg", caption: "Riding between the pyramids" },
-      { src: "assets/images/gallery/giza/3.jpg", caption: "Standing beside the Great Pyramid" },
-      { src: "assets/images/gallery/giza/4.jpg", caption: "The Great Sphinx and the pyramids" },
+      { src: "assets/images/gallery/giza/1.jpeg"},
+      { src: "assets/images/gallery/giza/2.jpeg"},
+      { src: "assets/images/gallery/giza/3.jpeg"},
+      { src: "assets/images/gallery/giza/4.jpeg"},
+      { src: "assets/images/gallery/giza/5.jpeg"},
+      { src: "assets/images/gallery/giza/6.jpeg"},
+      { src: "assets/images/gallery/giza/7.jpeg"},
+      { src: "assets/images/gallery/giza/8.jpeg"},
+      { src: "assets/images/gallery/giza/9.jpeg"},
     ],
     itinerary: [
       { time: "08:00", title: "Pick-up", text: "Transfer from your Cairo/Giza hotel." },
@@ -214,7 +226,7 @@ window.ZUZI_TOURS = [
     region: "Red Sea · Egypt",
     icon: "ri-ship-2-line",
     tagline: "Pristine reefs, dolphins and desert nights",
-    image: "assets/images/marsa-alam.webp",
+    image: "assets/images/marsa-alam.jpeg",
     rating: 4.8,
     reviews: 876,
     duration: "Full day · ~8 hrs",
@@ -223,7 +235,7 @@ window.ZUZI_TOURS = [
     cardDesc:
       "Swim with spinner dolphins at the famous Dolphin House, snorkel virgin reefs and end the day with a Bedouin dinner under the stars.",
     longDesc:
-      "Marsa Alam is the Red Sea at its most unspoiled — warm turquoise water, vibrant house reefs and the legendary Sataya Dolphin House. Our day blends a boat trip to snorkel and dive among friendly spinner dolphins with the option of a quad-bike desert safari and a traditional Bedouin dinner beneath a sky full of stars. Perfect for couples, families and ocean lovers of every level.",
+      "Marsa Alam: Did you know that Satya is more than just a place? Here are some facts and information I discovered about this unique spot. It's also my favorite place in the world.",
     highlights: [
       { icon: "ri-emotion-happy-line", title: "Dolphin House (Sataya)" },
       { icon: "ri-water-flash-line", title: "Pristine coral reefs" },
@@ -233,10 +245,13 @@ window.ZUZI_TOURS = [
       { icon: "ri-star-smile-line", title: "Stargazing in the dunes" },
     ],
     gallery: [
-      { src: "assets/images/gallery/marsa-alam/1.webp", caption: "Spinner dolphins at Sataya Reef" },
-      { src: "assets/images/gallery/marsa-alam/2.webp", caption: "Swimming alongside wild dolphins" },
-      { src: "assets/images/gallery/marsa-alam/3.webp", caption: "Snorkel boat over the coral gardens" },
-      { src: "assets/images/gallery/marsa-alam/4.webp", caption: "An overnight trip under the stars" },
+      { src: "assets/images/gallery/marsa-alam/3.jpeg"},
+      { src: "assets/images/gallery/marsa-alam/4.jpeg"},
+      { src: "assets/images/gallery/marsa-alam/5.jpeg"},
+      { src: "assets/images/gallery/marsa-alam/6.jpeg"},
+      { src: "assets/images/gallery/marsa-alam/7.jpeg"},
+      { src: "assets/images/gallery/marsa-alam/8.jpeg"},
+      { src: "assets/images/gallery/marsa-alam/9.jpeg"},
     ],
     itinerary: [
       { time: "08:00", title: "Boat departure", text: "Board at the marina and cruise toward Sataya Reef." },
@@ -248,48 +263,6 @@ window.ZUZI_TOURS = [
     ],
     included: ["Boat trip & crew", "Snorkelling equipment", "Two guided reef stops", "Onboard lunch & drinks", "Hotel transfers", "Guide"],
     excluded: ["Diving (optional extra)", "Quad-bike safari (optional)", "Bedouin dinner (optional)", "Tips & gratuities"],
-  },
-
-  {
-    id: "hurghada",
-    name: "Hurghada",
-    region: "Red Sea · Egypt",
-    icon: "ri-sun-line",
-    tagline: "Sun, coral islands and Red Sea adventures",
-    image: "assets/images/hurghada.jpg",
-    rating: 4.7,
-    reviews: 1503,
-    duration: "Full day · ~7 hrs",
-    durationShort: "7 hours",
-    bestFor: "Families & beach fun",
-    cardDesc:
-      "Cruise to the protected island of Giftun, snorkel crystal lagoons and explore the colourful reefs of the Red Sea Riviera.",
-    longDesc:
-      "Hurghada is the lively heart of the Red Sea Riviera, and this tour is its greatest hits. Sail to Giftun Island for white-sand beaches and protected lagoons, snorkel above teeming coral gardens, and choose from optional add-ons like a semi-submarine reef tour, parasailing or a lively evening at the Marina. A relaxed, family-friendly day on the water with everything handled.",
-    highlights: [
-      { icon: "ri-island-line", title: "Giftun Island" },
-      { icon: "ri-water-flash-line", title: "Coral lagoon snorkelling" },
-      { icon: "ri-ship-line", title: "Reef cruise" },
-      { icon: "ri-restaurant-line", title: "Onboard lunch" },
-      { icon: "ri-water-flash-line", title: "Semi-submarine add-on" },
-      { icon: "ri-anchor-line", title: "Hurghada Marina" },
-    ],
-    gallery: [
-      { src: "assets/images/gallery/hurghada/1.jpg", caption: "Orange Bay on Giftun Island" },
-      { src: "assets/images/gallery/hurghada/2.jpg", caption: "Giftun Island National Park" },
-      { src: "assets/images/gallery/hurghada/3.jpg", caption: "Snorkelling at Orange Bay" },
-      { src: "assets/images/gallery/hurghada/4.jpg", caption: "Reef snorkelling on the trip" },
-    ],
-    itinerary: [
-      { time: "08:30", title: "Boarding", text: "Pick-up and departure from the Hurghada marina." },
-      { time: "10:00", title: "First reef", text: "Snorkel stop over the coral gardens." },
-      { time: "12:00", title: "Giftun Island", text: "Free time on the beach & lagoon swimming." },
-      { time: "13:30", title: "Onboard lunch", text: "Buffet lunch served on the boat (included)." },
-      { time: "15:00", title: "Second reef", text: "Final snorkel stop before heading back." },
-      { time: "16:30", title: "Return", text: "Transfer back to your hotel." },
-    ],
-    included: ["Boat trip & crew", "Snorkelling equipment", "Giftun Island fees", "Onboard lunch & soft drinks", "Hotel transfers", "Guide"],
-    excluded: ["National park fee", "Semi-submarine (optional)", "Parasailing (optional)", "Tips & gratuities"],
   },
 
   {
@@ -316,12 +289,17 @@ window.ZUZI_TOURS = [
       { icon: "ri-anchor-line", title: "Shore-entry diving" },
       { icon: "ri-shield-star-line", title: "Protected marine park" },
     ],
+
     gallery: [
-      { src: "assets/images/gallery/marsa-mubarak/1.webp", caption: "Grazing dugong over the seagrass" },
-      { src: "assets/images/gallery/marsa-mubarak/2.jpg", caption: "Sea turtles in the warm shallows" },
-      { src: "assets/images/gallery/marsa-mubarak/3.jpg", caption: "Coral gardens of Marsa Mubarak" },
-      { src: "assets/images/gallery/marsa-mubarak/4.jpg", caption: "Drift dives along the reef wall" },
+      { src: "assets/images/gallery/marsa-mubarak/1.jpeg"},
+      { src: "assets/images/gallery/marsa-mubarak/2.jpeg"},
+      { src: "assets/images/gallery/marsa-mubarak/3.jpeg"},
+      { src: "assets/images/gallery/marsa-mubarak/4.jpeg"},
+      { src: "assets/images/gallery/marsa-mubarak/5.jpeg"},
+      { src: "assets/images/gallery/marsa-mubarak/6.jpeg"},
+      { src: "assets/images/gallery/marsa-mubarak/7.jpeg"},
     ],
+
     itinerary: [
       { time: "08:00", title: "Pick-up", text: "Transfer from your Marsa Alam hotel to the bay." },
       { time: "09:00", title: "Snorkel briefing", text: "Kit-up and short briefing with your guide." },
@@ -358,12 +336,16 @@ window.ZUZI_TOURS = [
       { icon: "ri-user-smile-line", title: "Perfect for non-swimmers" },
       { icon: "ri-parent-line", title: "Family-friendly" },
     ],
+
     gallery: [
-      { src: "assets/images/gallery/submarine/1.png", caption: "Tropical fish 25 metres below the surface" },
-      { src: "assets/images/gallery/submarine/2.jpg", caption: "The submarine descending into the deep" },
-      { src: "assets/images/gallery/submarine/3.jpg", caption: "Coral reefs through the viewport" },
-      { src: "assets/images/gallery/submarine/4.webp", caption: "Life aboard the tourist submarine" },
+      { src: "assets/images/gallery/submarine/1.jpeg"},
+      { src: "assets/images/gallery/submarine/2.jpeg"},
+      { src: "assets/images/gallery/submarine/3.jpeg"},
+      { src: "assets/images/gallery/submarine/4.jpeg"},
+      { src: "assets/images/gallery/submarine/5.jpeg"},
+      { src: "assets/images/gallery/submarine/6.jpeg"},
     ],
+
     itinerary: [
       { time: "08:30", title: "Pick-up", text: "Transfer from your hotel to the marina in Marsa Alam or Hurghada." },
       { time: "09:30", title: "Boarding", text: "Board the submarine and safety briefing." },
@@ -401,10 +383,14 @@ window.ZUZI_TOURS = [
       { icon: "ri-restaurant-line", title: "Snorkelling & swimming" },
     ],
     gallery: [
-      { src: "assets/images/gallery/sharm-el-luli/1.jpg", caption: "The white-sand arc of Hankorab" },
-      { src: "assets/images/gallery/sharm-el-luli/2.jpg", caption: "Turquoise lagoon at Sharm El Luli" },
-      { src: "assets/images/gallery/sharm-el-luli/3.jpg", caption: "Snorkelling the untouched house reef" },
-      { src: "assets/images/gallery/sharm-el-luli/4.jpg", caption: "Relaxing on one of the world's best beaches" },
+      { src: "assets/images/gallery/sharm-el-luli/1.jpeg"},
+      { src: "assets/images/gallery/sharm-el-luli/2.jpeg"},
+      { src: "assets/images/gallery/sharm-el-luli/3.jpeg"},
+      { src: "assets/images/gallery/sharm-el-luli/4.jpeg"},
+      { src: "assets/images/gallery/sharm-el-luli/5.jpeg"},
+      { src: "assets/images/gallery/sharm-el-luli/6.jpeg"},
+      { src: "assets/images/gallery/sharm-el-luli/7.jpeg"},
+
     ],
     itinerary: [
       { time: "08:00", title: "Pick-up", text: "Transfer from your Marsa Alam hotel to Wadi El Gemal." },
@@ -424,7 +410,7 @@ window.ZUZI_TOURS = [
     region: "Red Sea · Hurghada",
     icon: "ri-speed-line",
     tagline: "Dolphins, Orange Island and a fast-boat adventure",
-    image: "assets/images/orange-island.jpg",
+    image: "assets/images/gallery/orange-island/1.jpeg",
     rating: 4.7,
     reviews: 933,
     duration: "Half day · ~4 hrs",
@@ -443,10 +429,11 @@ window.ZUZI_TOURS = [
       { icon: "ri-parent-line", title: "Family-friendly pace" },
     ],
     gallery: [
-      { src: "assets/images/gallery/orange-island/1.jpg", caption: "Speedboat headed for the dolphins" },
-      { src: "assets/images/gallery/orange-island/2.jpg", caption: "Snorkelling alongside wild dolphins" },
-      { src: "assets/images/gallery/orange-island/3.jpg", caption: "White sands of Orange Island" },
-      { src: "assets/images/gallery/orange-island/4.jpg", caption: "Island-hopping along the coast" },
+      { src: "assets/images/gallery/orange-island/1.jpeg"},
+      { src: "assets/images/gallery/orange-island/2.jpeg"},
+      { src: "assets/images/gallery/orange-island/3.jpeg"},
+      { src: "assets/images/gallery/orange-island/4.jpeg"},
+
     ],
     itinerary: [
       { time: "08:30", title: "Pick-up & departure", text: "Hotel transfer and speed-boat departure from the marina." },
@@ -460,47 +447,6 @@ window.ZUZI_TOURS = [
     excluded: ["Food and drink on Orange Island (own expense)", "Tips & gratuities", "Personal expenses"],
   },
 
-  {
-    id: "sataya",
-    name: "Sataya Dolphin Reef",
-    region: "Red Sea · Marsa Alam",
-    icon: "ri-emotion-happy-line",
-    tagline: "The only place on Earth where dolphins connect with humans",
-    image: "assets/images/sataya.webp",
-    rating: 5.0,
-    reviews: 628,
-    duration: "Full day · ~8 hrs",
-    durationShort: "8 hours",
-    bestFor: "Dolphin experience",
-    cardDesc:
-      "Did you know that Sataya is more than just a place? It's the only place on Earth where dolphins have such a close relationship with humans — they seek out and play with people every day.",
-    longDesc:
-      "Did you know that Sataya is more than just a place? Here are some facts and information I discovered about this unique spot. It's also my favorite place in the world. It's the only place on Earth where dolphins have such a close relationship with humans. They seek out and play with people every day. The price includes lunch on board, drinks, and a car.",
-    highlights: [
-      { icon: "ri-emotion-happy-line", title: "Dolphins seek out humans every day" },
-      { icon: "ri-heart-3-line", title: "A truly unique connection" },
-      { icon: "ri-water-flash-line", title: "Crystal-clear reef waters" },
-      { icon: "ri-bubble-chart-line", title: "Snorkelling with wild dolphins" },
-      { icon: "ri-restaurant-line", title: "Lunch on board" },
-      { icon: "ri-car-line", title: "Transport included" },
-    ],
-    gallery: [
-      { src: "assets/images/gallery/sataya/1.webp", caption: "Spinner dolphins in the lagoon" },
-      { src: "assets/images/gallery/sataya/2.webp", caption: "Swimming alongside the dolphins" },
-      { src: "assets/images/gallery/sataya/3.webp", caption: "The reef from above" },
-      { src: "assets/images/gallery/sataya/4.webp", caption: "Dolphins playing with visitors" },
-    ],
-    itinerary: [
-      { time: "08:00", title: "Pick-up", text: "Transfer from your Marsa Alam hotel to the marina." },
-      { time: "09:00", title: "Departure", text: "Set sail toward the Sataya dolphin reef." },
-      { time: "10:00", title: "Dolphin snorkelling", text: "Swim and snorkel alongside wild dolphins that seek out humans every day." },
-      { time: "13:00", title: "Lunch on board", text: "Fresh lunch and drinks served on the boat." },
-      { time: "14:30", title: "Second reef stop", text: "One more snorkel over the coral gardens." },
-      { time: "16:30", title: "Return", text: "Cruise back and transfer to your hotel." },
-    ],
-    included: ["Lunch on board", "Drinks", "Transport (car)", "Snorkelling equipment", "Dolphin encounters", "Guide"],
-    excluded: ["Tips & gratuities", "Personal expenses"],
-  },
 
   {
     id: "abu-dabbab",
@@ -527,10 +473,12 @@ window.ZUZI_TOURS = [
       { icon: "ri-shield-star-line", title: "Protected pristine waters" },
     ],
     gallery: [
-      { src: "assets/images/gallery/abu-dabbab/1.jpg", caption: "Snorkelling the clear waters of Abu Dabbab" },
-      { src: "assets/images/gallery/abu-dabbab/2.jpg", caption: "Sea turtles over the seagrass" },
-      { src: "assets/images/gallery/abu-dabbab/3.webp", caption: "The sandy shore of Abu Dabbab" },
-      { src: "assets/images/gallery/abu-dabbab/4.jpg", caption: "Snorkelling with turtles and dugongs" },
+      { src: "assets/images/gallery/abu-dabbab/1.jpeg"},
+      { src: "assets/images/gallery/abu-dabbab/2.jpeg"},
+      { src: "assets/images/gallery/abu-dabbab/3.jpeg"},
+      { src: "assets/images/gallery/abu-dabbab/4.jpeg"},
+
+      
     ],
     itinerary: [
       { time: "08:00", title: "Pick-up", text: "Transfer from your Marsa Alam hotel to Abu Dabbab beach." },
@@ -550,7 +498,7 @@ window.ZUZI_TOURS = [
     region: "Red Sea · Marsa Alam",
     icon: "ri-roadster-line",
     tagline: "Quad bikes, Bedouin traditions and desert sunsets",
-    image: "assets/images/marsa-safari.webp",
+    image: "assets/images/gallery/marsa-safari/2.jpeg",
     rating: 4.7,
     reviews: 731,
     duration: "Half day · ~5 hrs",
@@ -569,10 +517,10 @@ window.ZUZI_TOURS = [
       { icon: "ri-music-2-line", title: "Traditional dance performance" },
     ],
     gallery: [
-      { src: "assets/images/gallery/marsa-safari/1.webp", caption: "Quad biking across the desert dunes" },
-      { src: "assets/images/gallery/marsa-safari/2.jpg", caption: "Riding through the desert to the Bedouin tent" },
-      { src: "assets/images/gallery/marsa-safari/3.webp", caption: "Camel rides and sunset at the camp" },
-      { src: "assets/images/gallery/marsa-safari/4.jpg", caption: "Desert safari adventure in Marsa Alam" },
+      { src: "assets/images/gallery/marsa-safari/1.jpeg"},
+      { src: "assets/images/gallery/marsa-safari/2.jpeg"},
+      { src: "assets/images/gallery/marsa-safari/3.jpeg"},
+
     ],
     itinerary: [
       { time: "13:00", title: "Pick-up", text: "Transfer from your hotel to the quad base in the mountains." },
@@ -592,7 +540,7 @@ window.ZUZI_TOURS = [
     region: "Upper Egypt · Qena & Sohag",
     icon: "ri-ancient-gate-line",
     tagline: "Two of Egypt's most exquisitely decorated temples",
-    image: "assets/images/dendera-abydos.webp",
+    image: "assets/images/gallery/dendera-abydos/5.jpeg",
     rating: 4.9,
     reviews: 384,
     duration: "Full day · ~12 hrs",
@@ -611,10 +559,12 @@ window.ZUZI_TOURS = [
       { icon: "ri-sun-line", title: "Painted astronomical ceiling" },
     ],
     gallery: [
-      { src: "assets/images/gallery/dendera-abydos/1.jpg", caption: "Reliefs in the Temple of Osiris at Abydos" },
-      { src: "assets/images/gallery/dendera-abydos/2.jpg", caption: "Hieroglyphs on the walls of Dendera" },
-      { src: "assets/images/gallery/dendera-abydos/3.jpg", caption: "Ancient temple architecture" },
-      { src: "assets/images/gallery/dendera-abydos/4.jpg", caption: "The Osiris Temple at Abydos" },
+      { src: "assets/images/gallery/dendera-abydos/1.jpeg"},
+      { src: "assets/images/gallery/dendera-abydos/2.jpeg"},
+      { src: "assets/images/gallery/dendera-abydos/3.jpeg"},
+      { src: "assets/images/gallery/dendera-abydos/4.jpeg"},
+      { src: "assets/images/gallery/dendera-abydos/5.jpeg"},
+
     ],
     itinerary: [
       { time: "05:00", title: "Early pick-up", text: "Transfer from your Marsa Alam or Hurghada hotel." },
@@ -653,10 +603,19 @@ window.ZUZI_TOURS = [
       { icon: "ri-bubble-chart-line", title: "Coral reefs offshore" },
     ],
     gallery: [
-      { src: "assets/images/gallery/port-ghalib/1.jpg", caption: "The marina at Port Ghalib" },
-      { src: "assets/images/gallery/port-ghalib/2.jpg", caption: "Colourful promenade and waterfront" },
-      { src: "assets/images/gallery/port-ghalib/3.jpg", caption: "The resort town at golden hour" },
-      { src: "assets/images/gallery/port-ghalib/4.jpg", caption: "Port Ghalib marina on the Red Sea" },
+      { src: "assets/images/gallery/port-ghalib/1.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/2.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/3.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/4.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/5.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/6.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/7.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/8.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/9.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/10.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/11.jpeg"},
+      { src: "assets/images/gallery/port-ghalib/12.jpeg"},
+
     ],
     itinerary: [
       { time: "09:00", title: "Pick-up", text: "Transfer from your Marsa Alam hotel to Port Ghalib." },
