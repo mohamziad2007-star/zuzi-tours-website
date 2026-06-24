@@ -149,7 +149,7 @@ window.ZUZI_I18N = {
         tagline: "Největší muzeum pod širým nebem na světě", bestFor: "Historie a archeologie",
         duration: "Celý den · cca 12 hod", durationShort: "12 hodin",
         cardDesc: "Procházejte se mezi kolosálními sloupy Karnaku a sestupte do královských hrobek Údolí králů na východním i západním břehu.",
-        longDesc: "Luxor, kdysi mocné hlavní město starověkých Théb, skrývá nebývalou koncentraci památek. Naše celodenní túra překračuje oba břehy Nilu — od věhlasné hypostylové haly Karnaku až po malované hrobky ukryté hluboko v Údolí králů. Licencovaný egyptolog průvodce oživí každý hieroglyf, zatímco pohodlná doprava a oběd u řeky dělají den bezstarostným.",
+        longDesc: "Our adventure begins in Marsa Alam or Hurghada with a trip to Luxor, including a one-night stay in one of its hotels. If you'd like to experience a two-day hot air balloon ride, on the first day you'll visit Karnak Temple, the Temple of Hatshepsut, and the Valley of the Kings, cross the Nile by small boat, and have lunch. On the second day, at dawn, you'll enjoy a hot air balloon ride, which concludes around 8:00 AM, after which you'll return to the hotel. The trip includes a one-day tour guide, drinks, and transportation. Book your trip now!",
         highlights: ["Komplex chrámu Karnak", "Chrám v Luxoru v noci", "Údolí králů", "Chrám Hatšepsut", "Kolosy Memnonovy", "Plavba na nilské feluce"],
         gallery: ["Chrám Hatšepsut na západním břehu", "Obelisk Hatšepsut v Karnaku", "Velká hypostylová hala Karnaku", "Cesta k Údolí králů"],
         itinerary: [
@@ -187,7 +187,7 @@ window.ZUZI_I18N = {
         tagline: "Kde je Nil nejkrásnější", bestFor: "Kultura a odpočinek",
         duration: "Celý den · cca 10 hod", durationShort: "10 hodin",
         cardDesc: "Plavte se na ostrov chrámu Philae, stůjte pod mocnou Vysokou přehradou a kliďte se po Nilu na tradiční feluce.",
-        longDesc: "Asuán je klidnější a zelenější než kdekoli jinde na Nilu — sluncem zalité núbijské město ostrovů, žulových balvanů a plachetnic. Tato túra spojuje ikonický chrám Philae (zachráněný před stoupající vodou) s technickým divem Vysoké přehrady, starověkým Nedokončeným obeliskem a klidnou plavbou na feluce kolem Elefantiny a Botanické zahrady.",
+        longDesc: "We depart from Marsa Alam or Hurghada for a trip to Aswan, including visits to the High Dam Temple, Philae Temple, and Abu Simbel Temple. The trip lasts two days with one overnight stay. On the first day, you will visit the High Dam Temple and Philae Temple, enjoy a Nile cruise, have lunch, and stay in one of Aswan's most luxurious hotels. On the second day, we will take you to Abu Simbel Temple. The journey from Aswan to Abu Simbel takes approximately 3 hours. The trip includes food, drinks, transportation, and a tour guide for both days. Book your trip now!",
         highlights: ["Chrám Philae (Eset)", "Vysoká přehrada Asuán", "Nedokončený obelisk", "Ostrov Botanická zahrada", "Tradiční plavba na feluce", "Návštěva núbijské vesnice"],
         gallery: ["Chrám Philae na ostrově", "Nastoupení na tradiční feluku", "Klidná plavba na feluce po Nilu", "Lodě plovoucí po Nilu v Asuánu"],
         itinerary: [
@@ -225,7 +225,7 @@ window.ZUZI_I18N = {
         tagline: "Poslední přeživší div starověkého světa", bestFor: "Poprvé navštěvující",
         duration: "Půlden · cca 5 hod", durationShort: "5 hodin",
         cardDesc: "Potkejte Velkou pyramidu Chufua, jeďte mezi pyramidami a odhalte tajemství Velké sfingy na Gízecké plošině.",
-        longDesc: "Žádná cesta do Egypta není úplná bez stání u paty Velkých pyramid v Gíze — jediného starověkého divu, který stále stojí. Tento půldenní zážitek pokrývá celou plošinu: Velkou pyramidu Chufua, pyramidy Chafre a Menkaurea, panoramatický vyhlídkový bod ideální pro fotky a záhadnou Velkou sfingu s jejím údolním chrámem. Volitelné doplňky vám umožní vstoupit do pyramidy nebo navštívit Velké egyptské muzeum.",
+        longDesc: "Our trip from Marsa Alam or Hurghada to the Giza Pyramids in Egypt is a one-day excursion. We'll take you to the pyramids and visit the Grand Egyptian Museum. The trip price includes lunch, and we'll provide a tour guide and a car. What are you waiting for? Book your trip with us now!",
         highlights: ["Velká pyramida Chufua", "Panoramatické fotomísto", "Velká sfinga", "Údolní chrám", "Volitelná jízda na velbloudovi", "Doplněk Velké egyptské muzeum"],
         gallery: ["Jízda na velbloudovi po Gízecké plošině", "Jízda mezi pyramidami", "Stání vedle Velké pyramidy", "Velká sfinga a pyramidy"],
         itinerary: [
@@ -243,7 +243,7 @@ window.ZUZI_I18N = {
         tagline: "Nedotčené útesy, delfíni a pouštní noci", bestFor: "Šnorchlování a potápění",
         duration: "Celý den · cca 8 hod", durationShort: "8 hodin",
         cardDesc: "Plavte se s rotujícími delfíny ve slavném Domě delfínů, šnorchlujte nad panenskými útesy a zakončete den beduínskou večeří pod hvězdami.",
-        longDesc: "Marsa Alam je Rudé moře v jeho nejnedotčenější podobě — teplá tyrkysová voda, živé domácí útesy a legendární Sataya Dům delfínů. Náš den spojuje výlet lodí ke šnorchlování a potápění mezi přátelskými rotujícími delfíny s možností pouštního safari na čtyřkolce a tradiční beduínské večeře pod hvězdným nebem. Ideální pro páry, rodiny i milovníky oceánu každé úrovně.",
+        longDesc: "Did you know that Satya is more than just a place? Here are some facts and information I discovered about this unique spot. It's the only place on Earth where dolphins have such a close relationship with humans. They seek out and play with people every day. The price includes lunch on board, drinks, and a car. Book now!",
         highlights: ["Dům delfínů (Sataya)", "Nedotčené korálové útesy", "Šnorchlovací a potápěcí zastávky", "Beduínská večeře", "Pouštní safari na čtyřkolce", "Pozorování hvězd v dunách"],
         gallery: ["Rotující delfíni na útesu Sataya", "Plavání s divokými delfíny", "Šnorchlovací loď nad korálovými zahradami", "Noční trip pod hvězdami"],
         itinerary: [
@@ -523,7 +523,7 @@ window.ZUZI_I18N = {
         tagline: "Największe na świecie muzeum pod gołym niebem", bestFor: "Historia i archeologia",
         duration: "Cały dzień · ok. 12 godz", durationShort: "12 godzin",
         cardDesc: "Przechadzaj się wśród kolosalnych kolumn Karnaku i zejdź do królewskich grobowców Doliny Królów na Wschodnim i Zachodnim Brzegu.",
-        longDesc: "Luksor, niegdyś potężna stolica starożytnych Teb, skrywa niezrównane zagęszczenie zabytków. Nasza całodniowa wycieczka obejmuje oba brzegi Nilu — od wspaniałej sali hipostylowej Karnaku po malowane grobowce ukryte głęboko w Dolinie Królów. Licencjonowany przewodnik-egiptolog ożywi każdy hieroglif, a komfortowy transport i lunch nad rzeką sprawią, że dzień będzie bezstresowy.",
+        longDesc: "Our adventure begins in Marsa Alam or Hurghada with a trip to Luxor, including a one-night stay in one of its hotels. If you'd like to experience a two-day hot air balloon ride, on the first day you'll visit Karnak Temple, the Temple of Hatshepsut, and the Valley of the Kings, cross the Nile by small boat, and have lunch. On the second day, at dawn, you'll enjoy a hot air balloon ride, which concludes around 8:00 AM, after which you'll return to the hotel. The trip includes a one-day tour guide, drinks, and transportation. Book your trip now!",
         highlights: ["Kompleks świątyni Karnak", "Świątynia w Luksorze nocą", "Dolina Królów", "Świątynia Hatszepsut", "Kolosy Memnona", "Rejs feluką po Nilu"],
         gallery: ["Świątynia Hatszepsut na Zachodnim Brzegu", "Obelisk Hatszepsut w Karnaku", "Wielka sala hipostylowa Karnaku", "Droga do Doliny Królów"],
         itinerary: [
@@ -561,7 +561,7 @@ window.ZUZI_I18N = {
         tagline: "Gdzie Nil jest najpiękniejszy", bestFor: "Kultura i relaks",
         duration: "Cały dzień · ok. 10 godz", durationShort: "10 godzin",
         cardDesc: "Popłyń na wyspę świątyni File, stań pod potężną Wysoką Tamą i zanuć się po Nilu na tradycyjnej feluce.",
-        longDesc: "Asuan jest spokojniejszy i bardziej zielony niż gdziekolwiek indziej nad Nilem — pełne słońca nubijskie miasto wysp, granitowych głazów i żaglówek. Ta wycieczka łączy ikoniczną świątynię File (uratowaną przed wznoszącymi się wodami) z cudem inżynierii Wysokiej Tamy, starożytnym Niedokończonym Obeliskiem i spokojnym rejsem feluką wokół Elefantyny i Ogrodu Botanicznego.",
+        longDesc: "We depart from Marsa Alam or Hurghada for a trip to Aswan, including visits to the High Dam Temple, Philae Temple, and Abu Simbel Temple. The trip lasts two days with one overnight stay. On the first day, you will visit the High Dam Temple and Philae Temple, enjoy a Nile cruise, have lunch, and stay in one of Aswan's most luxurious hotels. On the second day, we will take you to Abu Simbel Temple. The journey from Aswan to Abu Simbel takes approximately 3 hours. The trip includes food, drinks, transportation, and a tour guide for both days. Book your trip now!",
         highlights: ["Świątynia File (Izyda)", "Wysoka Tama w Asuanie", "Niedokończony Obelisk", "Wyspa Ogród Botaniczny", "Tradycyjny rejs feluką", "Wizyta w wiosce nubijskiej"],
         gallery: ["Świątynia File na wyspie", "Wejście na tradycyjną felukę", "Spokojny rejs feluką po Nilu", "Łodzie płynące po Nilu w Asuanie"],
         itinerary: [
@@ -617,7 +617,7 @@ window.ZUZI_I18N = {
         tagline: "Nietknięte rafy, delfiny i pustynne noce", bestFor: "Snorkeling i nurkowanie",
         duration: "Cały dzień · ok. 8 godz", durationShort: "8 godzin",
         cardDesc: "Pływaj z delfinami długoszczęymi w słynnym Domu Delfinów, snorkeluj nad nietkniętymi rafami i zakończ dzień beduińską kolacją pod gwiazdami.",
-        longDesc: "Marsa Alam to Morze Czerwone w najbardziej nietkniętej postaci — ciepła turkusowa woda, żywe przybrzeżne rafy i legendarne Sataya Dom Delfinów. Nasz dzień łączy rejs łodzią ze snorkelingiem i nurkowaniem wśród przyjaznych delfinów długoszczękich z opcją pustynnego safari quadem i tradycyjnej beduińskiej kolacji pod rozgwieżdżonym niebem. Idealne dla par, rodzin i miłośników oceanu na każdym poziomie.",
+        longDesc: "Did you know that Satya is more than just a place? Here are some facts and information I discovered about this unique spot. It's the only place on Earth where dolphins have such a close relationship with humans. They seek out and play with people every day. The price includes lunch on board, drinks, and a car. Book now!",
         highlights: ["Dom Delfinów (Sataya)", "Nietknięte rafy koralowe", "Miejsca do snorkelingu i nurkowania", "Beduińska kolacja", "Pustynne safari quadem", "Obserwacja gwiazd na wydmach"],
         gallery: ["Delfiny długoszcze na rafie Sataya", "Pływanie z dzikimi delfinami", "Łódź snorkelingowa nad ogrodami koralowymi", "Nocny wyjazd pod gwiazdami"],
         itinerary: [
@@ -991,7 +991,7 @@ window.ZUZI_I18N = {
         tagline: "شعاب بكر، دلافين وليالٍ صحراوية", bestFor: "الغوص والسباحة",
         duration: "يوم كامل · ~8 ساعات", durationShort: "8 ساعات",
         cardDesc: "اسبح مع الدلافين الدوارة في بيت الدلافين الشهير، وغوص فوق شعاب بكر، واختتم اليوم بعشاء بدوي تحت النجوم.",
-        longDesc: "مرسى علم هي البحر الأحمر في أنقى صوره — مياه فيروزية دافئة، وشعاب منزلية نابضة بالحياة، وساتايا بيت الدلافين الأسطوري. يمزج يومنا بين رحلة بالقارب للسباحة والغوص وسط الدلافين الدوارة الودودة، وخيار سفاري صحراوي بالدراجة الرباعية، وعشاء بدوي تقليدي تحت سماء مرصعة بالنجوم. مثالي للأزواج والعائلات ومحبي المحيط على كل المستويات.",
+        longDesc: "Did you know that Satya is more than just a place? Here are some facts and information I discovered about this unique spot. It's the only place on Earth where dolphins have such a close relationship with humans. They seek out and play with people every day. The price includes lunch on board, drinks, and a car. Book now!",
         highlights: ["بيت الدلافين (ساتايا)", "شعاب مرجانية بكر", "محطات سباحة وغوص", "عشاء بدوي", "سفاري صحراوي بالدراجة الرباعية", "رصد النجوم في الكثبان"],
         gallery: ["الدلافين الدوارة في شعاب ساتايا", "السباحة مع الدلافين البرية", "قارب السباحة فوق الحدائق المرجانية", "رحلة ليلية تحت النجوم"],
         itinerary: [
