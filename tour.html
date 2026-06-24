@@ -6,8 +6,6 @@
   <title>Tour — Zuzi Tours</title>
   <meta name="description" content="Tour details, schedule and booking with Zuzi Tours. Book instantly on WhatsApp.">
   <meta name="theme-color" content="#1a3c40">
-
-  <!-- Apply saved language + RTL before paint -->
   <script>
     (function () {
       var l = localStorage.getItem("zuzi-lang") || "en";
@@ -15,19 +13,15 @@
       document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
     })();
   </script>
-
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231a3c40'/><path d='M5 25 L13 8 L17 16 L20 11 L27 25 Z' fill='%234ecdc4'/></svg>">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ============ HEADER ============ -->
   <header>
     <div class="header-layout">
       <a href="index.html" class="brand-mark">
@@ -69,10 +63,8 @@
   </header>
 
   <main>
-    <!-- Populated by js/control.js based on ?id= -->
     <div id="tour-detail"></div>
 
-    <!-- Related tours -->
     <section class="related">
       <div class="section-head">
         <span class="eyebrow"><i class="ri-compass-discover-line"></i> <span data-i18n="detail.keepExploring">Keep exploring</span></span>
@@ -82,7 +74,6 @@
     </section>
   </main>
 
-  <!-- ============ FOOTER ============ -->
   <footer class="site-footer" id="footer">
     <div class="footer-top">
       <div class="footer-brand">
@@ -100,11 +91,17 @@
         <h4 class="footer-heading" data-i18n="footer.destinations">Destinations</h4>
         <ul class="footer-links">
           <li><a href="tour.html?id=luxor"><i class="ri-arrow-right-s-line"></i> Luxor</a></li>
+          <li><a href="tour.html?id=luxor-balloon"><i class="ri-arrow-right-s-line"></i> Luxor Balloon</a></li>
           <li><a href="tour.html?id=aswan"><i class="ri-arrow-right-s-line"></i> Aswan</a></li>
           <li><a href="tour.html?id=abu-simbel"><i class="ri-arrow-right-s-line"></i> Abu Simbel</a></li>
           <li><a href="tour.html?id=giza"><i class="ri-arrow-right-s-line"></i> Giza Pyramids</a></li>
           <li><a href="tour.html?id=marsa-alam"><i class="ri-arrow-right-s-line"></i> Marsa Alam</a></li>
           <li><a href="tour.html?id=hurghada"><i class="ri-arrow-right-s-line"></i> Hurghada</a></li>
+          <li><a href="tour.html?id=marsa-mubarak"><i class="ri-arrow-right-s-line"></i> Marsa Mubarak</a></li>
+          <li><a href="tour.html?id=submarine"><i class="ri-arrow-right-s-line"></i> Submarine</a></li>
+          <li><a href="tour.html?id=sharm-el-luli"><i class="ri-arrow-right-s-line"></i> Sharm El Luli</a></li>
+          <li><a href="tour.html?id=orange-island"><i class="ri-arrow-right-s-line"></i> Hurghada Speed Trip</a></li>
+          <li><a href="tour.html?id=sataya"><i class="ri-arrow-right-s-line"></i> Sataya</a></li>
         </ul>
       </div>
 

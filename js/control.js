@@ -1,10 +1,3 @@
-/* ============================================================
-   ZUZI TOURS — Front-end controller
-   Handles: theming, header behaviour, mobile menu, i18n,
-   data-driven rendering of tour cards + the dynamic tour
-   detail page, gallery, and wiring all WhatsApp / contact links.
-   ============================================================ */
-
 (function () {
   "use strict";
 
@@ -13,7 +6,6 @@
   const t = window.t || ((k) => k);
   const zuziTour = window.zuziTour || ((tour) => tour);
 
-  /* ---------- small helpers ---------- */
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
   const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
 
@@ -30,9 +22,6 @@
 
   const getTour = (id) => TOURS.find((t) => t.id === id);
 
-  /* =====================================================
-     THEME
-     ===================================================== */
   function initTheme() {
     const root = document.documentElement;
     const saved = localStorage.getItem("zuzi-theme");
@@ -60,9 +49,6 @@
     });
   }
 
-  /* =====================================================
-     HEADER (scroll state + mobile menu)
-     ===================================================== */
   function initHeader() {
     const header = $(".header-layout");
     if (header) {
@@ -92,9 +78,6 @@
     }
   }
 
-  /* =====================================================
-     BACK TO TOP
-     ===================================================== */
   function initBackToTop() {
     const btn = $(".to-top");
     if (!btn) return;
@@ -106,12 +89,8 @@
     );
   }
 
-  /* =====================================================
-     CONFIG-DRIVEN LINK WIRING (single source of truth)
-     Sets hrefs/text for every contact + WhatsApp element.
-     ===================================================== */
   function wireConfig() {
-    $$( "[data-whatsapp-display]" ).forEach(
+    $$("[data-whatsapp-display]").forEach(
       (el) => (el.textContent = CFG.whatsappDisplay || "")
     );
     $$("[data-phone]").forEach((el) => (el.href = "tel:" + String(CFG.phone).replace(/\s/g, "")));
@@ -127,7 +106,6 @@
       $$("[data-social-tripadvisor]").forEach((el) => (el.href = CFG.social.tripadvisor || "#"));
     }
 
-    // WhatsApp links: data-wa-key (translated via i18n) or data-wa-msg (literal)
     $$("[data-wa]").forEach((el) => {
       let msg = el.getAttribute("data-wa-msg") || "";
       const key = el.getAttribute("data-wa-key");
@@ -143,10 +121,6 @@
     });
   }
 
-  /* =====================================================
-     BUILD A TOUR CARD (used on home + related)
-     Localised via zuziTour(); no price shown.
-     ===================================================== */
   function tourCardHTML(rawTour) {
     const tour = zuziTour(rawTour);
     return `
@@ -176,9 +150,6 @@
     grid.innerHTML = TOURS.map(tourCardHTML).join("");
   }
 
-  /* =====================================================
-     RENDER TOUR DETAIL PAGE (tour.html?id=…)
-     ===================================================== */
   function renderDetail() {
     const root = $("#tour-detail");
     if (!root) return;
@@ -267,7 +238,7 @@
       <div class="tour-body">
         <article class="tour-main">
           <h2><i class="ri-information-line"></i> ${escapeHTML(t("detail.aboutExp"))}</h2>
-          <p class="lead">${escapeHTML(tour.longDesc)}</p>
+          <div class="lead">${escapeHTML(tour.longDesc).replace(/\n/g, "<br>")}</div>
 
           ${highlights ? `<h2><i class="ri-star-smile-line"></i> ${escapeHTML(t("detail.highlights"))}</h2><div class="highlights-grid">${highlights}</div>` : ""}
 
@@ -358,10 +329,6 @@
       </section>`;
   }
 
-  /* =====================================================
-     GALLERY — toggle reveal + lightbox (event delegation
-     so it works on the dynamically rendered detail page)
-     ===================================================== */
   function initGallery() {
     let lightbox = null;
     let lbImages = [];
@@ -427,7 +394,6 @@
     }
 
     document.addEventListener("click", (e) => {
-      // Toggle button: reveal / hide the grid
       const toggle = e.target.closest(".gallery-toggle");
       if (toggle) {
         const collapse = toggle.nextElementSibling;
@@ -450,7 +416,6 @@
         return;
       }
 
-      // Click a gallery photo: open the lightbox
       const item = e.target.closest(".gallery-item img");
       if (item) {
         const grid = item.closest(".gallery-grid");
@@ -461,9 +426,6 @@
     });
   }
 
-  /* =====================================================
-     RENDER ALL (also used by language switching)
-     ===================================================== */
   function renderAll() {
     renderHomeCards();
     renderDetail();
@@ -472,9 +434,6 @@
   }
   window.zuziRender = renderAll;
 
-  /* =====================================================
-     BOOT
-     ===================================================== */
   function init() {
     initTheme();
     initHeader();

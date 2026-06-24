@@ -6,14 +6,10 @@
   <title>Zuzi Tours | Experience Egypt — Luxor, Aswan, Abu Simbel, Giza & the Red Sea</title>
   <meta name="description" content="Zuzi Tours is a specialized Egyptian travel company offering domestic tours to Luxor, Aswan, Abu Simbel, the Giza Pyramids, and excursions across Marsa Alam and Hurghada. Plan your next trip with professional, trusted service.">
   <meta name="theme-color" content="#1a3c40">
-
-  <!-- Open Graph -->
   <meta property="og:title" content="Zuzi Tours | Experience Egypt">
   <meta property="og:description" content="Domestic tours across Egypt — Luxor, Aswan, Abu Simbel, the Giza Pyramids, Marsa Alam & Hurghada.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/images/hero.jpg">
-
-  <!-- Apply saved language + RTL before paint -->
   <script>
     (function () {
       var l = localStorage.getItem("zuzi-lang") || "en";
@@ -21,23 +17,15 @@
       document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
     })();
   </script>
-
-  <!-- Favicon (inline SVG) -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231a3c40'/><path d='M5 25 L13 8 L17 16 L20 11 L27 25 Z' fill='%234ecdc4'/></svg>">
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ============ HEADER ============ -->
   <header>
     <div class="header-layout">
       <a href="index.html" class="brand-mark">
@@ -71,7 +59,6 @@
       </div>
     </div>
 
-    <!-- Mobile menu -->
     <div class="mobile-menu" id="mobileMenu">
       <nav class="mobile-nav" aria-label="Mobile">
         <a href="#hero" data-i18n="nav.home">Home</a>
@@ -83,7 +70,6 @@
   </header>
 
   <main>
-    <!-- ============ HERO ============ -->
     <section id="hero">
       <img class="hero-bg" src="assets/images/hero.jpg" alt="The pyramids of Giza at golden hour">
       <div class="hero-overlay"></div>
@@ -108,7 +94,6 @@
       </div>
     </section>
 
-    <!-- ============ ABOUT ============ -->
     <section id="about">
       <div class="about-content">
         <span class="eyebrow"><i class="ri-ancient-gate-line"></i> <span data-i18n="about.eyebrow">About Zuzi Tours</span></span>
@@ -135,7 +120,6 @@
       </div>
     </section>
 
-    <!-- ============ DESTINATIONS / TOURS ============ -->
     <section id="tours">
       <div class="section-head">
         <span class="eyebrow"><i class="ri-flight-takeoff-line"></i> <span data-i18n="tours.eyebrow">Pick your destination</span></span>
@@ -143,11 +127,9 @@
         <p class="section-sub" data-i18n="tours.sub">From the temples of the Nile to the coral of the Red Sea — tap any destination to see the schedule and book in seconds.</p>
       </div>
 
-      <!-- Rendered by js/control.js from js/tours-data.js -->
       <div class="card-grid container" id="tour-grid"></div>
     </section>
 
-    <!-- ============ CTA BAND ============ -->
     <section style="background: var(--color-bg-surface);">
       <div class="container">
         <div class="cta-band">
@@ -159,7 +141,6 @@
     </section>
   </main>
 
-  <!-- ============ FOOTER ============ -->
   <footer class="site-footer" id="footer">
     <div class="footer-top">
       <div class="footer-brand">
@@ -177,11 +158,17 @@
         <h4 class="footer-heading" data-i18n="footer.destinations">Destinations</h4>
         <ul class="footer-links">
           <li><a href="tour.html?id=luxor"><i class="ri-arrow-right-s-line"></i> Luxor</a></li>
+          <li><a href="tour.html?id=luxor-balloon"><i class="ri-arrow-right-s-line"></i> Luxor Balloon</a></li>
           <li><a href="tour.html?id=aswan"><i class="ri-arrow-right-s-line"></i> Aswan</a></li>
           <li><a href="tour.html?id=abu-simbel"><i class="ri-arrow-right-s-line"></i> Abu Simbel</a></li>
           <li><a href="tour.html?id=giza"><i class="ri-arrow-right-s-line"></i> Giza Pyramids</a></li>
           <li><a href="tour.html?id=marsa-alam"><i class="ri-arrow-right-s-line"></i> Marsa Alam</a></li>
           <li><a href="tour.html?id=hurghada"><i class="ri-arrow-right-s-line"></i> Hurghada</a></li>
+          <li><a href="tour.html?id=marsa-mubarak"><i class="ri-arrow-right-s-line"></i> Marsa Mubarak</a></li>
+          <li><a href="tour.html?id=submarine"><i class="ri-arrow-right-s-line"></i> Submarine</a></li>
+          <li><a href="tour.html?id=sharm-el-luli"><i class="ri-arrow-right-s-line"></i> Sharm El Luli</a></li>
+          <li><a href="tour.html?id=orange-island"><i class="ri-arrow-right-s-line"></i> Hurghada Speed Trip</a></li>
+          <li><a href="tour.html?id=sataya"><i class="ri-arrow-right-s-line"></i> Sataya</a></li>
         </ul>
       </div>
 
@@ -218,11 +205,9 @@
     </div>
   </footer>
 
-  <!-- Floating WhatsApp + back to top -->
   <a class="wa-fab" data-wa data-wa-key="wa.interested" href="#" aria-label="Chat on WhatsApp"><i class="ri-whatsapp-line"></i></a>
   <button class="to-top" aria-label="Back to top"><i class="ri-arrow-up-line"></i></button>
 
-  <!-- ============ SCRIPTS ============ -->
   <script src="js/config.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/tours-data.js"></script>

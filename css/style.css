@@ -1,14 +1,5 @@
-/* ============================================================
-   ZUZI TOURS — Stylesheet
-   Built on the foundation design system: brand teal palette,
-   Playfair Display / Cormorant Garamond / DM Sans typography,
-   soft hero overlay and elevated cards with hover lift.
-   Bugs fixed: removed broken `@import "tailwindcss"`, corrected
-   the fixed-header centering/transform conflict, themed every
-   new component for light + dark mode.
-   ============================================================ */
 
-/* ---------- Design tokens (light) ---------- */
+
 :root {
   --color-brand-primary: #1a3c40;
   --color-brand-secondary: #2a5f65;
@@ -66,7 +57,6 @@
   --shadow-soft: 0 10px 36px rgba(13, 31, 34, 0.12);
 }
 
-/* ---------- Design tokens (dark) ---------- */
 [data-theme="dark"] {
   --color-brand-primary: #4ecdc4;
   --color-brand-secondary: #38b2ac;
@@ -102,7 +92,6 @@
   --color-border-medium: #2a5255;
 }
 
-/* ---------- Reset ---------- */
 *,
 *::before,
 *::after {
@@ -145,7 +134,6 @@ a {
   margin-inline: auto;
 }
 
-/* ---------- Header / Nav ---------- */
 header {
   position: fixed;
   top: 16px;
@@ -291,7 +279,6 @@ header {
   border-radius: 999px;
 }
 
-/* Mobile slide-down menu */
 .mobile-menu {
   position: fixed;
   top: 86px;
@@ -337,7 +324,6 @@ header {
   color: var(--color-brand-accent);
 }
 
-/* ---------- Sections ---------- */
 main {
   position: relative;
 }
@@ -380,7 +366,6 @@ section {
   font-size: 1.02rem;
 }
 
-/* ---------- Hero ---------- */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -461,35 +446,6 @@ section {
   margin-top: 38px;
 }
 
-.hero-stats {
-  position: absolute;
-  z-index: 3;
-  top: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 14px;
-}
-
-.stat-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 9px 16px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(6px);
-  color: #fff;
-  font-size: 0.82rem;
-  font-weight: 500;
-}
-
-.stat-pill i {
-  color: var(--color-brand-accent);
-}
-
-/* Floating image popups (decorative) */
 @keyframes float-img {
   0% { transform: translateY(0) rotate(-7deg); }
   50% { transform: translateY(-12px) rotate(-5deg); }
@@ -538,7 +494,6 @@ section {
   50% { transform: translateY(6px); }
 }
 
-/* ---------- Buttons ---------- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -601,7 +556,6 @@ section {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ---------- About ---------- */
 #about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -694,7 +648,6 @@ section {
   opacity: 0.85;
 }
 
-/* ---------- Categories / tour cards ---------- */
 #tours {
   background: var(--color-bg-base);
 }
@@ -824,7 +777,6 @@ section {
   transition: transform 0.3s ease;
 }
 
-/* ---------- CTA strip ---------- */
 .cta-band {
   background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-secondary));
   color: #fff;
@@ -848,9 +800,6 @@ section {
   opacity: 0.92;
 }
 
-/* ============================================================
-   TOUR DETAIL PAGE
-   ============================================================ */
 .tour-hero {
   position: relative;
   min-height: 78vh;
@@ -948,7 +897,6 @@ section {
   color: var(--color-brand-accent);
 }
 
-/* Detail body layout */
 .tour-body {
   max-width: var(--maxw);
   margin: 0 auto;
@@ -984,7 +932,6 @@ section {
   line-height: 1.8;
 }
 
-/* Highlights grid */
 .highlights-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -1013,7 +960,6 @@ section {
   color: var(--color-text-primary);
 }
 
-/* Itinerary timeline */
 .timeline {
   position: relative;
   margin-left: 6px;
@@ -1062,7 +1008,6 @@ section {
   color: var(--color-text-secondary);
 }
 
-/* Included / excluded */
 .incl-excl {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1115,7 +1060,6 @@ section {
 .incl li i { color: var(--color-success); }
 .excl li i { color: var(--color-error); }
 
-/* Booking sidebar */
 .tour-aside {
   position: sticky;
   top: 100px;
@@ -1206,7 +1150,6 @@ section {
   color: var(--color-success);
 }
 
-/* ---------- Past Trips Gallery ---------- */
 .mini-sub {
   font-size: 0.98rem;
   color: var(--color-text-secondary);
@@ -1227,7 +1170,6 @@ section {
   transform: rotate(180deg);
 }
 
-/* Animated reveal using grid-template-rows (smooth auto-height) */
 .gallery-collapse {
   display: grid;
   grid-template-rows: 0fr;
@@ -1300,7 +1242,6 @@ section {
   color: var(--color-brand-accent);
 }
 
-/* ---------- Lightbox ---------- */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -1411,14 +1352,10 @@ section {
   transform: translateY(-50%) scale(1.08);
 }
 
-/* Related tours */
 .related {
   background: var(--color-bg-surface);
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
 .site-footer {
   background: var(--color-brand-primary);
   color: rgba(255, 255, 255, 0.8);
@@ -1545,7 +1482,6 @@ section {
   gap: 22px;
 }
 
-/* Floating WhatsApp button */
 .wa-fab {
   position: fixed;
   right: 22px;
@@ -1582,7 +1518,6 @@ section {
   100% { transform: scale(1.7); opacity: 0; }
 }
 
-/* Back to top */
 .to-top {
   position: fixed;
   right: 24px;
@@ -1611,9 +1546,6 @@ section {
   transform: translateY(0);
 }
 
-/* ============================================================
-   LANGUAGE SWITCHER
-   ============================================================ */
 .lang-switch {
   position: relative;
 }
@@ -1708,15 +1640,12 @@ section {
 }
 
 .lang-menu button.active::before {
-  content: "\EB7B"; /* ri-check-line */
+  content: "\EB7B"; 
   font-family: "remixicon";
   font-size: 1rem;
   margin-inline-end: -2px;
 }
 
-/* ============================================================
-   RTL (Arabic) SUPPORT
-   ============================================================ */
 [dir="rtl"] body {
   font-family: "Tajawal", var(--font-body);
 }
@@ -1777,9 +1706,6 @@ section {
   left: 22px;
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
 @media (max-width: 1024px) {
   .tour-body {
     grid-template-columns: 1fr;
@@ -1809,10 +1735,6 @@ section {
 
   .menu-btn {
     display: grid;
-  }
-
-  .hero-stats {
-    top: 92px;
   }
 
   .float-img,
@@ -1850,14 +1772,6 @@ section {
   .lang-btn {
     padding: 0 9px;
     font-size: 0.76rem;
-  }
-
-  .hero-stats {
-    flex-direction: column;
-    align-items: flex-start;
-    top: 88px;
-    left: 20px;
-    transform: none;
   }
 
   .hero-cta {
@@ -1910,7 +1824,6 @@ section {
   }
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
