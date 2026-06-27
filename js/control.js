@@ -48,7 +48,7 @@
       btn.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
     });
   }
-
+//Header controls
   function initHeader() {
     const header = $(".header-layout");
     if (header) {

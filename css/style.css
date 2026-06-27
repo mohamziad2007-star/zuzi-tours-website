@@ -166,10 +166,12 @@ header {
 
 .header-layout.active {
   background: var(--color-nav-bg, rgba(230, 240, 242, 0.92));
+  border-radius: 12px;
   border-color: var(--color-border-subtle);
   box-shadow: var(--shadow-soft);
   animation-play-state: paused;
   transform: translateY(0);
+  transition: .32s ease-in-out;
 }
 
 [data-theme="dark"] .header-layout.active {
