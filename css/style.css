@@ -216,6 +216,8 @@ header {
   display: flex;
   align-items: center;
   gap: 26px;
+  border-radius: 12px;
+  transition: .32s ease-in-out;
 }
 
 .main-nav a {
@@ -307,6 +309,8 @@ header {
 .mobile-nav {
   display: flex;
   flex-direction: column;
+  border-radius: 12px;
+  transition: .32s ease-in-out;
 }
 
 .mobile-nav a {
