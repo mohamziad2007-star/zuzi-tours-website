@@ -6,6 +6,7 @@ window.ZUZI_CONFIG = {
   whatsappDisplay: "+20 10 22747727",
 
   phone: "+20 10 22747727",
+  email: "zuzitours@gmail.com",
 
   location: "Hurghada & Marsa Alam, Red Sea — Egypt",
   areasServed: [
