@@ -25,7 +25,7 @@
   function initTheme() {
     const root = document.documentElement;
     const saved = localStorage.getItem("zuzi-theme");
-    const theme = saved || "light";
+    const theme = saved || "dark";
     root.setAttribute("data-theme", theme);
     updateThemeIcon(theme);
 
