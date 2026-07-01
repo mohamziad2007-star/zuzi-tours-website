@@ -10,12 +10,14 @@ window.ZUZI_CONFIG = {
 
   location: "Hurghada & Marsa Alam, Red Sea — Egypt",
   areasServed: [
+
     "Luxor",
     "Aswan",
     "Abu Simbel",
     "Giza Pyramids",
     "Marsa Alam",
     "Hurghada",
+  
   ],
 
   hours: "Every day · 8:00 AM – 10:00 PM (EET)",
